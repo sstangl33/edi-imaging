@@ -1,0 +1,105 @@
+.container {
+  height: 100px;
+  padding: 0px 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid #bbb;
+}
+
+.navWrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0;
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.item:last-child {
+  justify-content: flex-end;
+  flex: 2;
+}
+
+.logoWrapper {
+  margin-left: 20px;
+  color: white;
+}
+
+.list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: #131313;
+  margin: auto;
+}
+
+.listItem {
+  margin: 14px 14px 16px;
+  padding: 10px 10px 4px;
+  border-bottom: 4px solid transparent;
+  font-weight: 400;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+  text-align: center;
+  min-width: 120px;
+}
+
+.listItem:last-child {
+  margin-right: 0;
+}
+
+.listItem:hover {
+  border-bottom: 4px solid #3f56ad;
+}
+
+@media (max-width: 1280px) {
+  .listItem {
+    margin: 14px 8px 16px;
+    padding: 10px 8px 4px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .list {
+    display: none;
+  }
+
+  .logoWrapper {
+    margin-left: 0;
+    width: 300px;
+    justify-content: center;
+    display: flex;
+  }
+
+  .logoWrapper .logo {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .logoWrapper {
+    width: 180px;
+  }
+
+  .logoWrapper .logo {
+    width: 200px;
+    margin: 0 auto;
+  }
+}

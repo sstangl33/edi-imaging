@@ -1,0 +1,125 @@
+.container {
+  max-width: 1280px;
+  margin: 80px auto 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catBoxRow {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catBox {
+  margin: 14px 12px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 31%;
+  height: 249px;
+}
+
+.catTextBox {
+  margin: 14px 12px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  width: 31%;
+}
+
+.catTextTitle {
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+  color: #131313;
+  margin-bottom: 10px;
+}
+
+.catText {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 1.12px;
+  font-weight: 400;
+  color: #888888;
+  margin: 0 0 30px;
+}
+
+.catLink {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  transition: all 0.75s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #ccc;
+}
+
+.catLinkText {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transition: all 0.75s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+}
+
+.catLink:hover {
+  background-color: initial;
+}
+
+.catLink:hover .catLinkText {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 3rem;
+  }
+
+  .catBox {
+    width: calc(52% - 3rem);
+    margin: 18px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+    margin: 10px auto 1rem;
+  }
+
+  .catTextBox {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .catBox {
+    width: 100%;
+    margin: 4px 0;
+  }
+
+  .catLink {
+    border: none;
+  }
+}
