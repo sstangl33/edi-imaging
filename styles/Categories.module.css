@@ -74,7 +74,7 @@
   text-align: center;
   width: 100%;
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 0;
   transition: all 0.75s ease-in-out;
   opacity: 1;
@@ -114,6 +114,10 @@
     align-items: center;
     width: 100%;
     text-align: center;
+  }
+
+  .catLinkText {
+    top: 47%;
   }
 
   .catBox {
