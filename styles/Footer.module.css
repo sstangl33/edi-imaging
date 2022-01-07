@@ -58,8 +58,7 @@
   .copyright {
     text-align: center;
     line-height: 1.8;
-    min-width: 160px;
-    max-width: 220px;
+    width: 100%;
   }
 
   .logoWrapper {
