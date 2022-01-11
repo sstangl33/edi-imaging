@@ -18,6 +18,19 @@
   padding: 0;
 }
 
+.menuIcon {
+  display: none !important;
+}
+
+.logoWrapper {
+  margin-left: 20px;
+  color: white;
+}
+
+.nav .logoWrapper {
+  display: none;
+}
+
 .item {
   flex: 1;
   display: flex;
@@ -29,12 +42,7 @@
   flex: 2;
 }
 
-.logoWrapper {
-  margin-left: 20px;
-  color: white;
-}
-
-.list {
+.navList {
   padding: 0;
   display: flex;
   align-items: center;
@@ -43,7 +51,7 @@
   margin: auto;
 }
 
-.listItem {
+.navListItem {
   margin: 14px 14px 16px;
   padding: 10px 10px 4px;
   border-bottom: 4px solid transparent;
@@ -59,27 +67,23 @@
   min-width: 120px;
 }
 
-.listItem:last-child {
+.navListItem:last-child {
   margin-right: 0;
 }
 
-.listItem:hover {
+.navListItem:hover {
   border-bottom: 4px solid #3f56ad;
 }
 
 @media (max-width: 1280px) {
-  .listItem {
+  .navListItem {
     margin: 14px 8px 16px;
     padding: 10px 8px 4px;
     font-size: 12px;
   }
 }
 
-@media (max-width: 1000px) {
-  .list {
-    display: none;
-  }
-
+@media (max-width: 992px) {
   .logoWrapper {
     margin-left: 0;
     width: 300px;
@@ -90,6 +94,60 @@
   .logoWrapper .logo {
     width: 100%;
     margin: 0 auto;
+  }
+
+  .menuIcon {
+    color: #131313;
+    position: fixed;
+    top: 2.25rem;
+    right: 3.6rem;
+    cursor: pointer;
+    display: block !important;
+    z-index: 100;
+  }
+
+  .item.nav {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 70px;
+    z-index: 10;
+    border-left: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  .openNav.item.nav {
+    transform: translateX(100%);
+    /* transition: transform 0.2s ease-in; */
+  }
+
+  .closedNav.item.nav {
+    transform: translateX(0);
+  }
+
+  .nav .logoWrapper {
+    display: block;
+    width: initial;
+    margin-bottom: 20px;
+  }
+
+  .navList {
+    border-top: 1px solid #131313;
+    display: initial;
+    margin: 0;
+    padding-top: 24px;
+  }
+
+  .navListItem {
+    font-size: 16px;
+    margin: 14px 8px 28px;
   }
 }
 
