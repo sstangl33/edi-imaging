@@ -12,7 +12,7 @@ const MallContent = () => {
       description: "Christmas border",
     },
     {
-      img: "/img/mall/santa2.jpg",
+      img: "/img/mall/santa2a.jpg",
       description: "Christmas border",
     },
     {
