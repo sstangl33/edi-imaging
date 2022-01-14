@@ -31,7 +31,7 @@ const MallContent = () => {
 
   return (
     <div className={styles.container}>
-      <h3 className={styles.title}>Mall Seasonal Photography</h3>
+      <h4 className={styles.title}>Mall Seasonal Photography</h4>
       <p className={styles.text}>
         EDI Imaging is an event imaging company based in Columbiana, OH. It
         utilizes digital technology and on-site printing capabilities to capture
@@ -82,6 +82,22 @@ const MallContent = () => {
           Spotsylvania Towne Centre, Spotsylvania, VA
         </li>
       </ul>
+      <br />
+      <br />
+      <h4 className={styles.h4}>Download Mall Photos</h4>
+      <p className={styles.catText}>
+        Please{" "}
+        <a
+          className={styles.link}
+          href="http://ediimaging.phototouchinc.com/"
+          alt="Download Holiday Photos"
+          target="_blank"
+        >
+          Click here
+        </a>{" "}
+        if you are looking for your downloadable holiday pictures you purchased
+        from us at one of the malls.
+      </p>
     </div>
   );
 };

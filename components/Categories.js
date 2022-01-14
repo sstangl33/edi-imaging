@@ -34,12 +34,12 @@ const Categories = () => {
     <div className={styles.container}>
       <div className={styles.catBoxRow}>
         <div className={styles.catTextBox}>
-          <h3 className={styles.catTextTitle}>Download Photos Mall Photos</h3>
+          <h3 className={styles.catTextTitle}>Download Mall Photos</h3>
           <p className={styles.catText}>
             Please{" "}
             <a
               className={styles.link}
-              href="http://ediimaging.phototouchinc.com/)"
+              href="http://ediimaging.phototouchinc.com/"
               alt="Download Holiday Photos"
               target="_blank"
             >
