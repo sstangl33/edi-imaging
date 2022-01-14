@@ -1,7 +1,6 @@
 import styles from "../styles/Content.module.css";
-import Image from "next/image";
 
-const MallContent = () => {
+const SportsContent = () => {
   const sportsDay = [
     {
       img: "/img/sports/setup2.jpg",
@@ -87,7 +86,7 @@ const MallContent = () => {
       </p>
       <div className={styles.row}>
         {sportsDay.map((sd, i) => (
-          <div className={styles.imageWrapper}>
+          <div className={styles.imageWrapper} key={i}>
             <img className={styles.image} src={sd.img} alt={sd.description} />
           </div>
         ))}
@@ -113,7 +112,7 @@ const MallContent = () => {
 
       <div className={styles.row}>
         {samples.map((sample, i) => (
-          <div className={styles.imageWrapper}>
+          <div className={styles.imageWrapper} key={i}>
             <img
               className={styles.shadow}
               src={sample.img}
@@ -127,4 +126,4 @@ const MallContent = () => {
   );
 };
 
-export default MallContent;
+export default SportsContent;

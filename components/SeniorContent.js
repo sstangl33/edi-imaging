@@ -1,7 +1,7 @@
 import styles from "../styles/Content.module.css";
 import Image from "next/image";
 
-const MallContent = () => {
+const SeniorContent = () => {
   const portraits = [
     {
       img: "/img/senior/bdw_4920gg.jpg",
@@ -102,7 +102,7 @@ const MallContent = () => {
 
       <div className={styles.row}>
         {portraits.map((portrait, i) => (
-          <div className={styles.imageWrapper}>
+          <div className={styles.imageWrapper} key={i}>
             <Image
               className={styles.image}
               src={portrait.img}
@@ -117,4 +117,4 @@ const MallContent = () => {
   );
 };
 
-export default MallContent;
+export default SeniorContent;

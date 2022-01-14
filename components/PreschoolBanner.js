@@ -1,6 +1,6 @@
 import styles from "../styles/HeroBanner.module.css";
 
-const HeroBanner = () => {
+const PreschoolBanner = () => {
   return (
     <div className={styles.banner}>
       <div className={styles.imgWrapper}>
@@ -18,4 +18,4 @@ const HeroBanner = () => {
     </div>
   );
 };
-export default HeroBanner;
+export default PreschoolBanner;

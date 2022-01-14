@@ -1,7 +1,6 @@
 import styles from "../styles/HeroBanner.module.css";
-import { useState } from "react";
 
-const HeroBanner = () => {
+const SportsBanner = () => {
   return (
     <div className={styles.banner}>
       <div className={styles.imgWrapper}>
@@ -19,4 +18,4 @@ const HeroBanner = () => {
     </div>
   );
 };
-export default HeroBanner;
+export default SportsBanner;

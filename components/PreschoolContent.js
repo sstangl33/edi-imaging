@@ -1,7 +1,7 @@
 import styles from "../styles/Content.module.css";
 import Image from "next/image";
 
-const MallContent = () => {
+const PreschoolContent = () => {
   const borders = [
     {
       img: "/img/preschool/10-15-2009_024.jpg",
@@ -94,7 +94,7 @@ const MallContent = () => {
 
       <div className={styles.row}>
         {borders.map((border, i) => (
-          <div className={styles.imageWrapper}>
+          <div className={styles.imageWrapper} key={i}>
             <Image
               className={styles.image}
               src={border.img}
@@ -109,4 +109,4 @@ const MallContent = () => {
   );
 };
 
-export default MallContent;
+export default PreschoolContent;

@@ -54,7 +54,7 @@ const MallContent = () => {
 
       <div className={styles.row}>
         {borders.map((border, i) => (
-          <div className={styles.imageWrapper}>
+          <div className={styles.imageWrapper} key={i}>
             <Image
               className={styles.image}
               src={border.img}
