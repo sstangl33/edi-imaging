@@ -70,7 +70,7 @@ const MallContent = () => {
       <h3 className={styles.title}>Sports Photography</h3>
       <h4 className={styles.h4}>Sports Leagues</h4>
       <p className={styles.text}>
-        EDI Imaging is the premier Sports Photography Company in the area. In
+        eDI Imaging is the premier Sports Photography Company in the area. In
         the past decade we have photographed thousands of area athletes. We
         supply services for numerous youth organizations and sports leagues in
         the tri-state area.

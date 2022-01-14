@@ -5,12 +5,15 @@ const MallContent = () => {
     <div className={styles.container}>
       <div className={styles.twoColWrap} style={{ marginTop: 2 + "rem" }}>
         <div className={styles.col1}>
-          <h2 className={styles.title} style={{ textAlign: "left" }}>
-            Contact eDI Imaging
+          <h2
+            className={styles.title}
+            style={{ textAlign: "left", textTransform: "initial" }}
+          >
+            CONTACT eDI IMAGING
           </h2>
           <h4 className={styles.h4}>Address</h4>
-          <address className={styles.text}>
-            EDI Imaging 1254 <br />
+          <address className={styles.text} style={{ color: "#333" }}>
+            eDI Imaging 1254 <br />
             Beaver Circle <br />
             Columbiana, OH 44408
           </address>

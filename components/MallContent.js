@@ -33,7 +33,7 @@ const MallContent = () => {
     <div className={styles.container}>
       <h4 className={styles.title}>Mall Seasonal Photography</h4>
       <p className={styles.text}>
-        EDI Imaging is an event imaging company based in Columbiana, OH. It
+        eDI Imaging is an event imaging company based in Columbiana, OH. It
         utilizes digital technology and on-site printing capabilities to capture
         seasonal portraits with both Santa and the Easter Bunny.
       </p>
