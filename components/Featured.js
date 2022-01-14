@@ -1,7 +1,7 @@
 import styles from "../styles/Featured.module.css";
 import Image from "next/image";
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import { useState } from "react";
 
 const Featured = () => {
@@ -13,21 +13,21 @@ const Featured = () => {
       title: "Family Portraits",
       description:
         "Maecenas volutpat consequat orci id consectetur. Namvulput quam turpis.",
-      link: "10",
+      link: "./family",
     },
     {
       img: "/img/feature2.jpg",
       title: "Sports Photography",
       description:
         "Consequat orci id consectetur. Namvulput quam turpis, id tristique nibh ullamcorper dignissim.",
-        link: "20",
+      link: "./sports",
     },
     {
       img: "/img/feature3.jpg",
       title: "Senior Portraits",
       description:
         "Maecenas volutpat consequat orci id consectetur. Namvulput quam turpis, id tristique nibh ullamcorper dignissim.",
-        link: "30",
+      link: "./senior",
     },
   ];
 
@@ -43,29 +43,32 @@ const Featured = () => {
   return (
     <div className={styles.slider}>
       {slides.map((slide, i) => (
-        <div className={
-          i !== index
-           ? styles.slide
-           : [styles.slide, styles.active].join(" ")
-        } key={i}>
+        <div
+          className={
+            i !== index ? styles.slide : [styles.slide, styles.active].join(" ")
+          }
+          key={i}
+        >
           <img className="slideImg" src={slide.img} alt="" />
           <div className={styles.slideTextBoxWrapper}>
             <div className={styles.slideTextBox}>
               <h2 className={styles.slideTitle}>{slide.title}</h2>
               <p className={styles.slideText}>{slide.description}</p>
-              <a className={styles.button} href={slides.link} alt="Learn more">More Info</a>
+              <a className={styles.button} href={slide.link} alt="Learn more">
+                More Info
+              </a>
               <div className={styles.slideNavigation}>
-                {slides.map((i,j) => (
-                  <a className={
-                  j !== index
-                  ? styles.slideIcon
-                  : [styles.slideIcon, styles.active].join(" ")
-                } 
-                  key={j} 
-                  href="#"
-                  onClick={() => setIndex(j)}
-                >
-                </a>
+                {slides.map((i, j) => (
+                  <a
+                    className={
+                      j !== index
+                        ? styles.slideIcon
+                        : [styles.slideIcon, styles.active].join(" ")
+                    }
+                    key={j}
+                    href="#"
+                    onClick={() => setIndex(j)}
+                  ></a>
                 ))}
               </div>
             </div>
@@ -73,18 +76,17 @@ const Featured = () => {
         </div>
       ))}
 
-      <ArrowBackIosIcon 
+      <ArrowBackIosIcon
         className={styles.slideNavArrow}
         style={{ left: 0 }}
-        onClick={() => handleArrow("l")} 
+        onClick={() => handleArrow("l")}
       />
 
-      <ArrowForwardIosIcon 
+      <ArrowForwardIosIcon
         className={styles.slideNavArrow}
         style={{ right: 0 }}
-        onClick={() => handleArrow("r")} 
+        onClick={() => handleArrow("r")}
       />
-   
     </div>
   );
 };

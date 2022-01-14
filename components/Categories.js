@@ -51,7 +51,7 @@ const Categories = () => {
         </div>
 
         {links.map((link, i) => (
-          <div className={styles.catBox}>
+          <div className={styles.catBox} key={i}>
             <a className={styles.catLink} href={link.link}>
               <p className={styles.catLinkText}>{link.name}</p>
             </a>

@@ -52,19 +52,17 @@ const Navbar = () => {
     >
       <div className={styles.navWrapper}>
         <div className={styles.item}>
-          <h1>
-            <a href="./" alt="eDI Imaging">
-              <div className={styles.logoWrapper}>
-                <Image
-                  className={styles.logo}
-                  src="/img/edi-logo-2020.png"
-                  alt=""
-                  width="180px"
-                  height="56"
-                />
-              </div>
-            </a>
-          </h1>
+          <a href="./" alt="eDI Imaging">
+            <div className={styles.logoWrapper}>
+              <Image
+                className={styles.logo}
+                src="/img/edi-logo-2020.png"
+                alt=""
+                width="180px"
+                height="56"
+              />
+            </div>
+          </a>
         </div>
 
         {!isOpen ? (
