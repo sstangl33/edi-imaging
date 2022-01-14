@@ -31,7 +31,7 @@ const FamilyContent = () => {
 
   return (
     <div className={styles.container}>
-      <h3 className={styles.title}>Senior Portraits</h3>
+      <h3 className={styles.title}>Family Portraits</h3>
       <div className={styles.twoColWrap}>
         <div className={styles.col1}>
           <p className={styles.text}>

@@ -33,7 +33,7 @@ const SportsContent = () => {
       shadow: false,
     },
     {
-      img: "/img/sports/BYSA-TC-2017.jpg",
+      img: "/img/sports/bysa-tc-2017.jpg",
       description: "Sports Day",
       shadow: true,
     },

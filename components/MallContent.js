@@ -85,7 +85,7 @@ const MallContent = () => {
       <br />
       <br />
       <h4 className={styles.h4}>Download Mall Photos</h4>
-      <p className={styles.catText}>
+      <p className={styles.text}>
         Please{" "}
         <a
           className={styles.link}
