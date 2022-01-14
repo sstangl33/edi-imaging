@@ -130,6 +130,8 @@
 
 .col2 .image {
   height: 700px !important;
+  width: auto !important;
+  max-width: 100% !important;
 }
 
 .row {
