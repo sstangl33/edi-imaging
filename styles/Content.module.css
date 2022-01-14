@@ -1,0 +1,182 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  text-transform: uppercase;
+}
+
+.h4 {
+  margin: 0 0 1rem;
+  font-size: 24px;
+  color: #333;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1.12px;
+  font-weight: 400;
+  color: #333;
+  margin: 0 0 2rem;
+}
+
+.listTitle {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1.12px;
+  font-weight: 400;
+  color: #333;
+}
+
+.noBulletList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1.12px;
+  font-weight: 400;
+  color: #333;
+}
+
+.link {
+  color: #3f56ad;
+  text-decoration: underline;
+}
+
+.link:hover {
+  outline: none;
+  color: #333;
+}
+
+.imageWrapper {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.imageWrapper .image {
+  max-height: 300px;
+  margin: 0.5rem 1rem;
+  padding: 0;
+  width: auto;
+  max-width: 100%;
+}
+
+.imageWrapper .shadow {
+  max-height: 300px;
+  margin: 0.5rem 1rem;
+  padding: 0;
+  width: auto;
+  max-width: 100%;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.imageH400 {
+  max-height: 400px !important;
+}
+
+.link {
+  color: #3f56ad;
+  text-decoration: underline;
+}
+
+.link:hover {
+  outline: none;
+  color: #000;
+  text-decoration: underline;
+}
+
+.hr {
+  color: transparent;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 2rem;
+}
+
+.twoColWrap {
+  display: flex;
+  margin: 0 0 2rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col1 {
+  flex: 3;
+  margin: 0 2rem 2rem 0;
+}
+
+.col2 {
+  flex: 2;
+  margin: 0 0 2rem 2rem;
+}
+
+.col2 .image {
+  height: 700px !important;
+}
+
+.row {
+  display: flex;
+  margin: 0 0 2rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  .twoColWrap {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .col1 {
+    order: 2;
+  }
+
+  .col2 {
+    order: 1;
+    margin: 0 auto 2rem auto;
+  }
+
+  .col2 .image {
+    height: 500px !important;
+  }
+
+  .row {
+    justify-content: center;
+  }
+
+  .imageWrapper {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .imageWrapper {
+    width: 100%;
+    margin: 1rem;
+  }
+}

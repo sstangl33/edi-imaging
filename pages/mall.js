@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
-import Featured from "../components/Featured";
-import Categories from "../components/Categories";
+import MallBanner from "../components/MallBanner";
+import MallContent from "../components/MallContent";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -11,11 +11,12 @@ export default function Home() {
         <title>EDI Imaging</title>
         <meta
           name="description"
-          content="EDI Imaging - Premiere Event, Sports, Pre-school, and Portrait Photograpy."
+          content="EDI Imaging - Premiere Event, Sports, Pre-school, and Portrait Photography."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Featured />
+      <MallBanner />
+      <MallContent />
     </div>
   );
 }

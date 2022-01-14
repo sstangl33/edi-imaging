@@ -11,7 +11,7 @@ export default function Home() {
         <title>EDI Imaging</title>
         <meta
           name="description"
-          content="EDI Imaging - Premiere Event, Sports, Pre-school, and Portrait Photograpy."
+          content="EDI Imaging - Premiere Event, Sports, Pre-school, and Portrait Photography."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

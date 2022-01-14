@@ -1,83 +1,69 @@
 import styles from "../styles/Categories.module.css";
-import Link from "next/link";
 import Image from "next/image";
 
 const Categories = () => {
+  const links = [
+    {
+      name: "MALL SEASONAL PHOTOGRAPHY",
+      link: "./mall",
+      img: "/img/mall.jpg",
+    },
+    {
+      name: "SPORTS PHOTOGRAPHY",
+      link: "./sports",
+      img: "/img/sports.jpg",
+    },
+    {
+      name: "PRE-SCHOOL PHOTOGRAPHY",
+      link: "./preschool",
+      img: "/img/preschool.jpg",
+    },
+    {
+      name: "FAMILY PORTRAITS",
+      link: "./family",
+      img: "/img/family.jpg",
+    },
+    {
+      name: "SENIOR PORTRAITS",
+      link: "./senior",
+      img: "/img/senior.jpg",
+    },
+  ];
+
   return (
     <div className={styles.container}>
       <div className={styles.catBoxRow}>
         <div className={styles.catTextBox}>
-          <h3 className={styles.catTextTitle}>eDI Imaging</h3>
+          <h3 className={styles.catTextTitle}>Download Photos Mall Photos</h3>
           <p className={styles.catText}>
-            Nulla mattis aliquet lorem in fringilla. Proin mollis lorem ligula,
-            id feugiat diam.
+            Please{" "}
+            <a
+              className={styles.link}
+              href="http://ediimaging.phototouchinc.com/)"
+              alt="Download Holiday Photos"
+              target="_blank"
+            >
+              Click here
+            </a>{" "}
+            if you are looking for your downloadable holiday pictures you
+            purchased from us at one of the malls.
           </p>
         </div>
 
-        <div className={styles.catBox}>
-          <div className={styles.catLink} href="/">
-            <p className={styles.catLinkText}>Sports Photography</p>
+        {links.map((link, i) => (
+          <div className={styles.catBox}>
+            <a className={styles.catLink} href={link.link}>
+              <p className={styles.catLinkText}>{link.name}</p>
+            </a>
+            <Image
+              className={styles.catImg}
+              src={link.img}
+              alt=""
+              layout="fill"
+              objectFit="cover"
+            />
           </div>
-          <Image
-            className={styles.catImg}
-            src="/img/sports.jpg"
-            alt=""
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
-
-        <div className={styles.catBox}>
-          <div className={styles.catLink} href="/">
-            <p className={styles.catLinkText}>Pre-school Photography</p>
-          </div>
-          <Image
-            className={styles.catImg}
-            src="/img/preschool.jpg"
-            alt=""
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
-
-        <div className={styles.catBox}>
-          <div className={styles.catLink} href="/">
-            <p className={styles.catLinkText}>Family Portraits</p>
-          </div>
-          <Image
-            className={styles.catImg}
-            src="/img/family.jpg"
-            alt=""
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
-
-        <div className={styles.catBox}>
-          <div className={styles.catLink} href="/">
-            <p className={styles.catLinkText}>Senior Portraits</p>
-          </div>
-          <Image
-            className={styles.catImg}
-            src="/img/seniors.jpg"
-            alt=""
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
-
-        <div className={styles.catBox}>
-          <div className={styles.catLink} href="/">
-            <p className={styles.catLinkText}>Mall Seasonal Photography</p>
-          </div>
-          <Image
-            className={styles.catImg}
-            src="/img/mall.jpg"
-            alt=""
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
+        ))}
       </div>
     </div>
   );
