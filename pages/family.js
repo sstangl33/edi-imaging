@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import FamilyBanner from "../components/FamilyBanner";
 import FamilyContent from "../components/FamilyContent";
 import styles from "../styles/Home.module.css";

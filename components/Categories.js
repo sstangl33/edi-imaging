@@ -5,27 +5,27 @@ const Categories = () => {
   const links = [
     {
       name: "MALL SEASONAL PHOTOGRAPHY",
-      link: "./mall",
+      link: "/mall",
       img: "/img/mall.jpg",
     },
     {
       name: "SPORTS PHOTOGRAPHY",
-      link: "./sports",
+      link: "/sports",
       img: "/img/sports.jpg",
     },
     {
       name: "PRE-SCHOOL PHOTOGRAPHY",
-      link: "./preschool",
+      link: "/preschool",
       img: "/img/preschool.jpg",
     },
     {
       name: "FAMILY PORTRAITS",
-      link: "./family",
+      link: "/family",
       img: "/img/family.jpg",
     },
     {
       name: "SENIOR PORTRAITS",
-      link: "./senior",
+      link: "/senior",
       img: "/img/senior.jpg",
     },
   ];

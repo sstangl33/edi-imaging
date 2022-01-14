@@ -16,31 +16,31 @@ const Navbar = () => {
   const pages = [
     {
       name: "eDI IMAGING HOME",
-      link: "./",
+      link: "/",
     },
     {
       name: "MALL SEASONAL PHOTOGRAPHY",
-      link: "./mall",
+      link: "/mall",
     },
     {
       name: "SPORTS PHOTOGRAPHY",
-      link: "./sports",
+      link: "/sports",
     },
     {
       name: "PRE-SCHOOL PHOTOGRAPHY",
-      link: "./preschool",
+      link: "/preschool",
     },
     {
       name: "FAMILY PORTRAITS",
-      link: "./family",
+      link: "/family",
     },
     {
       name: "SENIOR PORTRAITS",
-      link: "./senior",
+      link: "/senior",
     },
     {
       name: "CONTACT eDI IMAGING",
-      link: "./contact",
+      link: "/contact",
     },
   ];
 
