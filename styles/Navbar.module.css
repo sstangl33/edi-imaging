@@ -146,11 +146,12 @@
   .nav .logoWrapper {
     display: block;
     width: initial;
-    margin-bottom: 20px;
+    margin-top: 32px;
   }
 
   .navList {
     border-top: 1px solid #131313;
+    border-bottom: 1px solid #131313;
     display: initial;
     margin: 0;
     padding-top: 24px;

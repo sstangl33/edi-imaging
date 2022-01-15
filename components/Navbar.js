@@ -74,6 +74,13 @@ const Navbar = () => {
         <div className={styles.mobileOverlay}></div>
 
         <div className={[styles.item, styles.nav].join(" ")}>
+          <ul className={styles.navList}>
+            {pages.map((page, i) => (
+              <li className={styles.navListItem} key={i}>
+                <a href={page.link}>{page.name}</a>
+              </li>
+            ))}
+          </ul>
           <div className={styles.logoWrapper}>
             <Image
               className={styles.logo}
@@ -83,13 +90,6 @@ const Navbar = () => {
               height="56"
             />
           </div>
-          <ul className={styles.navList}>
-            {pages.map((page, i) => (
-              <li className={styles.navListItem} key={i}>
-                <a href={page.link}>{page.name}</a>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </div>

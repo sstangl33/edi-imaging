@@ -13,8 +13,10 @@ const MallContent = () => {
           </h2>
           <h4 className={styles.h4}>Address</h4>
           <address className={styles.text} style={{ color: "#333" }}>
-            eDI Imaging 1254 <br />
-            Beaver Circle <br />
+            eDI Imaging
+            <br />
+            1254 Beaver Circle
+            <br />
             Columbiana, OH 44408
           </address>
 
