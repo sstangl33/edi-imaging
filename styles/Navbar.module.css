@@ -7,7 +7,7 @@
   justify-content: space-between;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 20;
   border-bottom: 1px solid #bbb;
 }
 
@@ -117,7 +117,6 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 66px;
-    z-index: 10;
     box-shadow: none;
     transform: translateX(100%);
     background-color: rgba(255, 255, 255, 0.9);
@@ -153,7 +152,7 @@
     border-top: 1px solid #131313;
     border-bottom: 1px solid #131313;
     display: initial;
-    margin: 35px 0 0;
+    margin: 50px 0 0;
     padding-top: 14px;
   }
 
@@ -179,6 +178,16 @@
 
   .menuIcon {
     right: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .item.nav {
+    max-width: none;
+  }
+
+  .logoLink {
+    z-index: 10;
   }
 }
 

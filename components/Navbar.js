@@ -52,7 +52,7 @@ const Navbar = () => {
     >
       <div className={styles.navWrapper}>
         <div className={styles.item}>
-          <a href="./" alt="eDI Imaging">
+          <a className={styles.logoLink} href="./" alt="eDI Imaging">
             <div className={styles.logoWrapper}>
               <Image
                 className={styles.logo}
