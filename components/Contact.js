@@ -12,7 +12,10 @@ const MallContent = () => {
             CONTACT eDI IMAGING
           </h2>
           <h4 className={styles.h4}>Address</h4>
-          <address className={styles.text} style={{ color: "#333" }}>
+          <address
+            className={styles.text}
+            style={{ color: "#333", fontStyle: "normal" }}
+          >
             eDI Imaging
             <br />
             1254 Beaver Circle

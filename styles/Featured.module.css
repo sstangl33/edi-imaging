@@ -50,7 +50,7 @@
   letter-spacing: 3px;
   margin: 0;
   font-size: 50px;
-  font-family: "Libre Baskerville", serif;
+  /* font-family: "Libre Baskerville", serif; */
 }
 
 .slideText {
