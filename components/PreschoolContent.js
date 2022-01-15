@@ -35,10 +35,13 @@ const PreschoolContent = () => {
       <h3 className={styles.title}>Pre-School Photography</h3>
       <p className={styles.text}>
         eDI Imaging takes great pride in its Pre-school photo services. We have
-        been providing services to Pre-schools in the area since 2002. We strive
-        to bring studio quality portraits to the preschool classroom and with
-        our LOOK-BEFORE-YOU-BUY system this makes it easier and more popular
-        with parents and teachers alike.
+        been providing services to Pre-schools in the area since 2002.{" "}
+      </p>
+
+      <p className={styles.text}>
+        We strive to bring studio quality portraits to the preschool classroom
+        and with our LOOK-BEFORE-YOU-BUY system this makes it easier and more
+        popular with parents and teachers alike.
       </p>
 
       <div className={styles.twoColWrap}>

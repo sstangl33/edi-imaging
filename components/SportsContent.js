@@ -92,22 +92,20 @@ const SportsContent = () => {
         ))}
       </div>
 
-      <h4 className={styles.h4}>Sports Products</h4>
+      <h4 className={styles.h4}>Our Products</h4>
       <p className={styles.text}>
         We take great pride in offering the best in both quality products and
-        customer service. We custom make products selectively for each sport or
-        organization to give our products a more personal touch; such products
-        include Designer Memory Mates, Trading Cards and Magazine Covers.
+        customer service.{" "}
+      </p>
+
+      <p className={styles.text}>
+        We custom make products selectively for each sport or organization to
+        give our products a more personal touch; such products include Designer
+        Memory Mates, Trading Cards and Magazine Covers.
       </p>
       <p className={styles.text}>
         All our prices are very competitive and all orders are delivered to you
         within 3-4 weeks. We also guarantee all our work and products.
-      </p>
-      <p className={styles.text}>
-        Booking with EDI Imaging means your league or association is also
-        eligible to receive free coaches team photos and digital files needed
-        for programs or posters. We can also offer sponsor plaques and frames if
-        required.
       </p>
       <p className={styles.text}>
         Here is a{" "}
@@ -120,6 +118,13 @@ const SportsContent = () => {
           Sports order form
         </a>{" "}
         that can be downloaded and printed.{" "}
+      </p>
+      <h4 className={styles.h4}>Book eDI Imaging</h4>
+      <p className={styles.text}>
+        Booking with EDI Imaging means your league or association is also
+        eligible to receive free coaches team photos and digital files needed
+        for programs or posters. We can also offer sponsor plaques and frames if
+        required.
       </p>
 
       <div className={styles.row}>
