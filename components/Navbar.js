@@ -81,15 +81,6 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <div className={styles.logoWrapper}>
-            <Image
-              className={styles.logo}
-              src="/img/edi-logo-2020.png"
-              alt=""
-              width="180px"
-              height="56"
-            />
-          </div>
         </div>
       </div>
     </div>
