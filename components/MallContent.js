@@ -82,22 +82,6 @@ const MallContent = () => {
           Spotsylvania Towne Centre, Spotsylvania, VA
         </li>
       </ul>
-      <br />
-      <br />
-      <h4 className={styles.h4}>Download Mall Photos</h4>
-      <p className={styles.text}>
-        Please{" "}
-        <a
-          className={styles.link}
-          href="http://ediimaging.phototouchinc.com/"
-          alt="Download Holiday Photos"
-          target="_blank"
-        >
-          Click here
-        </a>{" "}
-        if you are looking for your downloadable holiday pictures you purchased
-        from us at one of the malls.
-      </p>
     </div>
   );
 };

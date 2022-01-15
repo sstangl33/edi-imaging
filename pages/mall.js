@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import MallBanner from "../components/MallBanner";
+import HolidayBanner from "../components/HolidayBanner";
 import MallContent from "../components/MallContent";
 import styles from "../styles/Home.module.css";
 
@@ -16,6 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MallBanner />
+      <HolidayBanner />
       <MallContent />
     </div>
   );
