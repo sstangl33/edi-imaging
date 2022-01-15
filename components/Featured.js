@@ -53,7 +53,7 @@ const Featured = () => {
           <div className={styles.slideTextBoxWrapper}>
             <div className={styles.slideTextBox}>
               <h2 className={styles.slideTitle}>{slide.title}</h2>
-              {/* <p className={styles.slideText}>{slide.description}</p> */}
+              <p className={styles.slideText}>{slide.description}</p>
               <a className={styles.button} href={slide.link} alt="Learn more">
                 More Info
               </a>

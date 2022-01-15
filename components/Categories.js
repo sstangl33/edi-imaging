@@ -34,22 +34,12 @@ const Categories = () => {
     <div className={styles.container}>
       <div className={styles.catBoxRow}>
         <div className={styles.catTextBox}>
-          <h3 className={styles.catTextTitle}>Download Mall Photos</h3>
+          <h3 className={styles.catTextTitle}>eDI Imaging</h3>
           <p className={styles.catText}>
-            Please{" "}
-            <a
-              className={styles.link}
-              href="http://ediimaging.phototouchinc.com/"
-              alt="Download Holiday Photos"
-              target="_blank"
-            >
-              Click here
-            </a>{" "}
-            if you are looking for your downloadable holiday pictures you
-            purchased from us at one of the malls.
+            Nulla mattis aliquet lorem in fringilla. Proin mollis lorem ligula,
+            id feugiat diam.
           </p>
         </div>
-
         {links.map((link, i) => (
           <div className={styles.catBox} key={i}>
             <a className={styles.catLink} href={link.link}>

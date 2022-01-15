@@ -72,7 +72,6 @@
   position: relative;
   z-index: 5;
   background-color: #3f56ad;
-
   font-size: 1rem;
   transition: all 0.25s ease-in-out;
   font-weight: 600;
@@ -90,7 +89,7 @@
 }
 
 .slideIcon {
-  z-index: 999;
+  z-index: 20;
   background: #666;
   width: 30px;
   height: 10px;
