@@ -47,11 +47,17 @@ const PreschoolContent = () => {
           <p className={styles.text}>
             We arrive on picture day and photograph each student and then class.
             We print the proofs there at the school and have them ready for the
-            child to take home with them that day. Included with the proofs are
-            instructions and an order form. The parents are instructed to return
-            their order to the school by a due date. We will pick up the order
-            forms and return the completed school photo order within 3 weeks. We
-            also provide a 5x7 class photo for each teacher along with a CD
+            child to take home with them that day.
+          </p>
+          <p className={styles.text}>
+            Included with the proofs are instructions and an order form. The
+            parents are instructed to return their order to the school by a due
+            date. We will pick up the order forms and return the completed
+            school photo order within 3 weeks.
+          </p>
+          <p className={styles.text}>
+            {" "}
+            We also provide a 5x7 class photo for each teacher along with a CD
             including a photo of each student and class to be used for your own
             school projects.
           </p>

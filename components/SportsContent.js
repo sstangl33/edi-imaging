@@ -109,6 +109,18 @@ const SportsContent = () => {
         for programs or posters. We can also offer sponsor plaques and frames if
         required.
       </p>
+      <p className={styles.text}>
+        Here is a{" "}
+        <a
+          className={styles.link}
+          href="/img/sports/eDI-Imaging-Sports-Order-Form-2021.pdf"
+          target="_blank"
+          alt="Sports Order Form"
+        >
+          Sports order form
+        </a>{" "}
+        that can be downloaded and printed.{" "}
+      </p>
 
       <div className={styles.row}>
         {samples.map((sample, i) => (
