@@ -200,6 +200,9 @@
     max-width: 100%;
     padding: 0.5rem 40px 1rem;
     margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
   .slideTitle {
