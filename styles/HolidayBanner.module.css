@@ -20,10 +20,11 @@
 .bannerTitle {
   font-size: 32px;
   line-height: 42px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 400;
   color: #fff;
   margin: 0.5rem 1rem 0.5rem;
+  font-weight: 600;
 }
 
 .bannerText {
