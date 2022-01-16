@@ -9,6 +9,11 @@
   align-items: flex-start;
   flex-wrap: wrap;
   overflow: hidden;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.holidayBanner:hover {
+  background-color: #2a3e8b;
 }
 
 .col1 {
