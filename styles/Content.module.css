@@ -122,18 +122,21 @@
 
 .col1 {
   width: 50%;
-  margin: 0 2rem 2rem 0;
+  margin: 0 0 2rem 0;
 }
 
 .col2 {
   width: 50%;
-  margin: 0 0 2rem 2rem;
+  margin: 0 0 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .col2 .image {
   height: 700px !important;
   width: auto !important;
-  max-width: 100% !important;
+  padding: 1rem 2rem;
 }
 
 .row {
@@ -153,11 +156,13 @@
   .col1 {
     order: 2;
     margin: 0 auto;
+    width: 100%;
   }
 
   .col2 {
     order: 1;
     margin: 0 auto 2rem auto;
+    width: 100%;
   }
 
   .col2 .image {
