@@ -190,6 +190,7 @@
     margin: 0;
     width: 100%;
     align-items: end;
+    top: initial;
     z-index: 10;
   }
 
