@@ -1,5 +1,7 @@
 .container {
+  width: 100%;
   height: 100px;
+  margin: 0 auto;
   padding: 0 1rem;
   background-color: #fff;
   display: flex;
@@ -8,12 +10,12 @@
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid #eee;
   z-index: 9999;
 }
 
 .navWrapper {
-  max-width: 1920px;
+  max-width: 1228px;
   margin: 0 auto;
   display: flex;
   padding: 0 1rem;
@@ -59,11 +61,11 @@
   line-height: 1.5;
   font-weight: 600;
   color: #666;
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
   /* transition: all 0.25s ease-in; */
   text-align: center;
-  min-width: 120px;
+  min-width: 100px;
 }
 
 .navListItem:last-child {
@@ -72,13 +74,6 @@
 
 .navListItem:hover {
   border-bottom: 4px solid #3f56ad;
-}
-
-@media (max-width: 1400px) {
-  .navListItem {
-    font-size: 12px;
-    min-width: 100px;
-  }
 }
 
 @media (max-width: 1200px) {

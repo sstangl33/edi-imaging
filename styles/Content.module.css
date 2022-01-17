@@ -125,6 +125,10 @@
   margin: 0 0 2rem 0;
 }
 
+.contact .col1 {
+  padding: 0 4rem 0 0;
+}
+
 .col2 {
   width: 50%;
   margin: 0 0 2rem 0;
@@ -157,6 +161,10 @@
     order: 2;
     margin: 0 auto;
     width: 100%;
+  }
+
+  .contact .col1 {
+    padding: 0;
   }
 
   .col2 {

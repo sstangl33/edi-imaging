@@ -2,7 +2,7 @@ import styles from "../styles/Content.module.css";
 
 const MallContent = () => {
   return (
-    <div className={styles.container}>
+    <div className={[styles.container, styles.contact].join(" ")}>
       <div className={styles.twoColWrap} style={{ marginTop: 2 + "rem" }}>
         <div className={styles.col1}>
           <h2
