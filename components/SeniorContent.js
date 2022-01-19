@@ -8,11 +8,11 @@ const SeniorContent = () => {
       description: "Senior Portrait",
     },
     {
-      img: "/img/senior/bdw_6502SL.jpg",
+      img: "/img/senior/img_4607.jpg",
       description: "Senior Portrait",
     },
     {
-      img: "/img/senior/bdw_6892.jpg",
+      img: "/img/senior/bdw_6943.jpg",
       description: "Senior Portrait",
     },
     {
@@ -34,15 +34,24 @@ const SeniorContent = () => {
       <h3 className={styles.title}>Senior Portraits</h3>
       <div className={styles.twoColWrap}>
         <div className={styles.col1}>
+          <h4 className={styles.h4}>
+            Sitting Fee - $75.00
+            <br />
+            <small className={styles.small}>1-2 Hour Session / 2 Outfits</small>
+          </h4>
           <p className={styles.text}>
-            Portraits are viewed on your own private Web Gallery, hosted by
-            SmugMug.
+            Once your Senior Portrait session is complete your portraits will be
+            made available to you via your own private web gallery, to be viewed
+            at your leisure.
           </p>
 
-          <h4 className={styles.h4}>Digital Only Package - $150</h4>
+          <h4 className={styles.h4}>
+            Digital Only Package - $150
+            <br />
+            <small className={styles.small}>1-2 Hour Session / 2 Outfits</small>
+          </h4>
           <p className={styles.text}>
-            1-2 Hour session / 2 Outfits /Copyright release. 10 High resolution
-            digital images.
+            Copyright release. 10 High resolution digital images.
           </p>
 
           <h4 className={styles.h4}>Senior Portrait Pricing.</h4>
@@ -54,11 +63,6 @@ const SeniorContent = () => {
             your own needs.
           </p>
           <ul className={styles.noBulletList}>
-            <li className={styles.list}>
-              <strong>
-                Sitting Fee - $75.00 (1-2 Hour Session / 2 Outfits)
-              </strong>
-            </li>
             <li className={styles.list}>
               <strong>16x20 - $125 (Mounted)</strong>
             </li>

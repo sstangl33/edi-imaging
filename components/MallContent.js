@@ -75,7 +75,6 @@ const MallContent = () => {
       <ul>
         <li className={styles.list}>Eastwood Mall, Niles, OH</li>
         <li className={styles.list}>Ohio Valley Mall, St. Clairsville, OH</li>
-        <li className={styles.list}>St Clairsville, OH</li>
         <li className={styles.list}>Millcreek Mall, Erie, PA</li>
         <li className={styles.list}>Huntington Mall, Barboursville, WV</li>
         <li className={styles.list}>

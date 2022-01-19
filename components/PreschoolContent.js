@@ -93,11 +93,16 @@ const PreschoolContent = () => {
           </p>
         </div>
         <div className={styles.col2}>
-          <img
-            className={styles.image}
-            src="/img/preschool/preschool-proofs.jpg"
-            alt=""
-          />
+          <div className={styles.imgContainer}>
+            <img
+              className={styles.image}
+              src="/img/preschool/preschool-proofs.jpg"
+              alt=""
+            />
+            <figcaption className={styles.figcaption}>
+              <strong>Proof Sample</strong>
+            </figcaption>
+          </div>
         </div>
       </div>
 

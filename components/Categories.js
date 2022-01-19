@@ -36,8 +36,7 @@ const Categories = () => {
         <div className={styles.catTextBox}>
           <h3 className={styles.catTextTitle}>eDI Imaging</h3>
           <p className={styles.catText}>
-            Nulla mattis aliquet lorem in fringilla. Proin mollis lorem ligula,
-            id feugiat diam.
+            Creating memories and smiles for more than 20 years.
           </p>
         </div>
         {links.map((link, i) => (

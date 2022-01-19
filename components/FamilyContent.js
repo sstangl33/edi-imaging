@@ -16,7 +16,7 @@ const FamilyContent = () => {
       description: "Family Portrait",
     },
     {
-      img: "/img/family/bdw_8192_812v.jpg",
+      img: "/img/family/bdw_8176_812.jpg",
       description: "Family Portrait",
     },
     {
@@ -34,17 +34,26 @@ const FamilyContent = () => {
       <h3 className={styles.title}>Family Portraits</h3>
       <div className={styles.twoColWrap}>
         <div className={styles.col1}>
+          <h4 className={styles.h4}>
+            Sitting Fee - $75.00
+            <br />
+            <small className={styles.small}>1-2 Hour Session</small>
+          </h4>
           <p className={styles.text}>
-            Portraits are viewed on your own private Web Gallery, hosted by
-            SmugMug.
+            Once your Family Portrait session is complete your portraits will be
+            made available to you via your own private web gallery to be viewed
+            at your leisure.
           </p>
-          <h4 className={styles.h4}>Digital Only Package - $150</h4>
+          <h4 className={styles.h4}>
+            Digital Only Package
+            <br />
+            <small className={styles.small}>1-2 Hour Session</small>
+          </h4>
           <p className={styles.text}>
-            1-2 Hour session /Copyright release. 10 High resolution digital
-            images.
+            Copyright release. 10 High resolution digital images.
           </p>
 
-          <h4 className={styles.h4}>Family Portrait Pricing.</h4>
+          <h4 className={styles.h4}>Family Portrait Pricing</h4>
           <p className={styles.text}>
             All selected pictures are retouched, color and exposure corrected
             before printing. All pictures selected for prints will be made
@@ -53,9 +62,6 @@ const FamilyContent = () => {
             your own needs.
           </p>
           <ul className={styles.noBulletList}>
-            <li className={styles.list}>
-              <strong>Sitting Fee - $75.00 (1-2 Hour Session)</strong>
-            </li>
             <li className={styles.list}>
               <strong>16x20 - $125 (Mounted)</strong>
             </li>

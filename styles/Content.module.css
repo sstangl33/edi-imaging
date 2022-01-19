@@ -23,6 +23,10 @@
   color: #333;
 }
 
+.small {
+  font-size: 1rem;
+}
+
 .text {
   font-size: 16px;
   line-height: 28px;
@@ -63,12 +67,27 @@
   color: #333;
 }
 
+.imgContainer {
+  position: relative;
+}
+
+.figcaption {
+  position: absolute;
+  bottom: -0.25rem;
+  width: 100%;
+  text-align: center;
+}
+
 .imageWrapper {
   margin: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 30%;
+}
+
+.imageWrapper:hover {
+  cursor: pointer;
 }
 
 .imageWrapper .image {

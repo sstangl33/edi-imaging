@@ -38,7 +38,7 @@ const SportsContent = () => {
       shadow: true,
     },
     {
-      img: "/img/sports/dmm-2.jpg",
+      img: "/img/sports/ss_07.jpg",
       description: "Sports Day",
       shadow: false,
     },
@@ -53,7 +53,7 @@ const SportsContent = () => {
       shadow: true,
     },
     {
-      img: "/img/sports/dmm_h-baseball-ctaa.jpg",
+      img: "/img/sports/big-group_kids810.jpg",
       description: "Sports Day",
       shadow: false,
     },
