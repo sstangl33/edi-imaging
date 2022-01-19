@@ -56,7 +56,7 @@
 
 .navListItem {
   margin: 1rem 0.5rem;
-  padding: 0.5rem 0;
+  padding: 0;
   border-bottom: 4px solid transparent;
   line-height: 1.5;
   font-weight: 600;
@@ -74,6 +74,13 @@
 
 .navListItem:hover {
   border-bottom: 4px solid #3f56ad;
+}
+
+.navListItem a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0.5rem 0;
 }
 
 @media (max-width: 1200px) {
