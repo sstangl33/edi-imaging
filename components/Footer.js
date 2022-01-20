@@ -34,7 +34,7 @@ const Footer = () => {
 
         <div className={styles.item}>
           <p className={styles.copyright}>
-            Copyright © 2021 <br /> eDI Imaging <br /> All Rights Reserved.
+            Copyright © 2022 <br /> eDI Imaging <br /> All Rights Reserved.
           </p>
         </div>
       </div>
