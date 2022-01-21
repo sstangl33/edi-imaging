@@ -45,7 +45,7 @@ const FamilyContent = () => {
             at your leisure.
           </p>
           <h4 className={styles.h4}>
-            Digital Only Package
+            Digital Only Package - $150.00
             <br />
             <small className={styles.small}>1-2 Hour Session</small>
           </h4>
