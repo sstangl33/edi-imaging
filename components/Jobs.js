@@ -135,7 +135,7 @@ then please read on.</p>
         </div>
       </div>
 
-      <form className={showForm ? "" : "hidden" } action="https://formsubmit.co/e8946fa8d3a6177601054f19801441e6" method="POST">
+      <form className={showForm ? "" : "hidden" } action="https://formsubmit.co/info@ediimaging.com" method="POST">
         <input type="hidden" name="_subject" value={`${position} Job Application`} />
         <input type="hidden" name="_next" value="https://ediimaging.com/thanks"/>
         <input type="text" name="_honey" className="hidden"/>
