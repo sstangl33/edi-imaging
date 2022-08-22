@@ -8,7 +8,18 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  flex-grow: 1;
 }
 
 a {
@@ -18,4 +29,88 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.jobDescriptionWrapper {
+  margin: 2rem 0;
+  border-top: 1px solid #333;
+}
+
+.hidden {
+  display: none;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: 3rem auto;
+}
+
+.fieldWrapper {
+  margin: 1.25rem 0;
+}
+
+.w-34 {
+  width: 34%;
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.w-66{
+  width: 66%;
+  display: inline-block;
+}
+
+input, textarea, select {
+  margin: .25rem 0 0;
+  width: 100%;
+  border: 1px solid #999;
+  height: 2rem;
+}
+
+textarea {
+  height: 110px;
+}
+
+select {
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.btn-container {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.button {
+  margin: 3rem auto 2rem;
+  padding: 0.75rem;
+  width: 220px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+  background-color: #3f56ad;
+  font-size: 1rem;
+  transition: all 0.25s ease-in-out;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+.back-btn {
+  margin: 1rem auto 1rem;
+  color: #333;
+  background-color: #fff;
+  border: none;
+}
+
+.back-btn:hover {
+  color: #3f56ad;
+  background-color: #fff;
 }

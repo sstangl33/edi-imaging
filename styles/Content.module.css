@@ -86,9 +86,9 @@
   width: 30%;
 }
 
-.imageWrapper:hover {
+/* .imageWrapper:hover {
   cursor: pointer;
-}
+} */
 
 .imageWrapper .image {
   max-height: 300px;

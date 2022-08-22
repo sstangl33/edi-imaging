@@ -15,10 +15,10 @@
 }
 
 .navWrapper {
-  max-width: 1228px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
-  padding: 0 1rem;
+  padding: 0 3rem;
 }
 
 .menuIcon {
@@ -26,7 +26,6 @@
 }
 
 .logoWrapper {
-  margin-left: 20px;
   color: white;
 }
 
@@ -48,10 +47,9 @@
 .navList {
   padding: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   list-style: none;
   color: #131313;
-  margin: auto;
 }
 
 .navListItem {
@@ -65,7 +63,8 @@
   cursor: pointer;
   /* transition: all 0.25s ease-in; */
   text-align: center;
-  min-width: 100px;
+  min-width: 108px;
+  max-width: 120px;
 }
 
 .navListItem:last-child {
@@ -83,7 +82,19 @@
   padding: 0.5rem 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
+  .navWrapper {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .navWrapper {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1200px) {  
   .logoWrapper {
     margin-left: 0;
     width: 300px;
@@ -108,6 +119,11 @@
     height: 2.5rem !important;
   }
 
+  .mobile .navListItem {
+    max-width: 160px;
+    margin: 14px 8px 10px;
+  }
+
   .item.nav {
     width: 100%;
     max-width: 400px;
@@ -122,7 +138,7 @@
     padding-top: 66px;
     box-shadow: none;
     transform: translateX(100%);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
     z-index: 500;
   }
 
@@ -156,7 +172,7 @@
     border-top: 1px solid #131313;
     border-bottom: 1px solid #131313;
     display: initial;
-    margin: 50px 0 0;
+    margin: 20px 0 0;
     padding-top: 14px;
   }
 

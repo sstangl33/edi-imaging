@@ -38,6 +38,10 @@ const Navbar = () => {
       name: "SENIOR PORTRAITS",
       link: "/senior",
     },
+    // {
+    //   name: "JOB OPPORTUNITIES",
+    //   link: "/jobs",
+    // },
     {
       name: "CONTACT eDI IMAGING",
       link: "/contact",
