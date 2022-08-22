@@ -165,7 +165,7 @@ then please read on.</p>
           <label>Address 2</label>
           <br/>
           <input
-            name="address"
+            name="address2"
             onChange={handleAddress2Change}
             value={address2}
           />

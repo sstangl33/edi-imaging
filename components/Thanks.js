@@ -14,13 +14,12 @@ const MallContent = () => {
       </div>
 
       <div className="backBtnContainer">
-        <button
-          type="button"
+        <a
           className="button back-btn"
-          onClick={() => handleBackBtn()}
+          href="/jobs"
         >
           <span className="heading">&lt; Back</span>
-        </button>
+        </a>
       </div>
     </>
   );
