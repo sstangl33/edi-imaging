@@ -162,7 +162,7 @@ then please read on.</p>
         </div>
 
         <div className="fieldWrapper">
-          <label>Address 2</label>
+          <label>Address 2 (optional)</label>
           <br/>
           <input
             name="address2"
@@ -230,14 +230,13 @@ then please read on.</p>
         </div>
 
         <div className="fieldWrapper">
-          <label>Experience (Maximum length: 250 characters) </label>
+          <label>Experience (Optional - Maximum length: 250 characters) </label>
           <br/>
           <textarea
             maxLength="250"
             name="experience"
             onChange={handleExperienceChange}
             value={experience}
-            required
           />
         </div>
 
@@ -248,8 +247,9 @@ then please read on.</p>
             name="location"
             onChange={handleMallLocationChange}
             value={mallLocation}
-            required
+            placeholder=""
           >
+            <option value="Please select location">Please select location:</option>
             <option value="Eastwood Mall, Niles, OH">Eastwood Mall, Niles, OH</option>
             <option value="Ohio Valley Mall, St. Clairsville, OH">Ohio Valley Mall, St. Clairsville, OH</option>
             <option value="Millcreek Mall, Erie, PA">Millcreek Mall, Erie, PA</option>
