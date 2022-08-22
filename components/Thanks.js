@@ -11,6 +11,15 @@ const MallContent = () => {
       </h2>
       <p>We will be in contact with you soon.</p>
     </div>
+    <div className="backBtnContainer">
+    <button
+      type="button"
+      className="button back-btn"
+      onClick={() => handleBackBtn()}
+    >
+      <span className="heading">&lt; Back</span>
+    </button>
+  </div>
   );
 };
 
