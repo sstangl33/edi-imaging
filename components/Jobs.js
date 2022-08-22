@@ -247,9 +247,10 @@ then please read on.</p>
             name="location"
             onChange={handleMallLocationChange}
             value={mallLocation}
-            placeholder=""
+            placeholder="Please"
+            required
           >
-            <option value="Please select location">Please select location:</option>
+            <option value="">Please select location: </option>
             <option value="Eastwood Mall, Niles, OH">Eastwood Mall, Niles, OH</option>
             <option value="Ohio Valley Mall, St. Clairsville, OH">Ohio Valley Mall, St. Clairsville, OH</option>
             <option value="Millcreek Mall, Erie, PA">Millcreek Mall, Erie, PA</option>
