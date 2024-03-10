@@ -61,7 +61,6 @@ export const Jobs = (jobsDataRaw: jobsDataTypes) => {
   const handleBackBtn = () => {
     setPosition("");
     setShowForm(false);
-    // window.scrollTo(0, 0);
   };
 
   return (

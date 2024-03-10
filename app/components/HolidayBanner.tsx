@@ -51,6 +51,7 @@ export default function HolidayBanner(
               ? data?.easterBannerText
               : data?.universalBannerText}
           </p>
+          <div className="button">Download</div>
         </div>
         <div className="col2">
           <div className="imgWrapper">
