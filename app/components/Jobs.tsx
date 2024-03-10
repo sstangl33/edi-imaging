@@ -4,6 +4,7 @@ import PortableTextComponent from "@/sanity/components/PortableText";
 import { jobsDataTypes } from "@/sanity/lib/types";
 import { PortableText } from "@portabletext/react";
 import { useState } from "react";
+import Link from "next/link";
 import "../(site)/styles/jobs.css";
 
 export const Jobs = (jobsDataRaw: jobsDataTypes) => {
@@ -60,13 +61,14 @@ export const Jobs = (jobsDataRaw: jobsDataTypes) => {
   const handleBackBtn = () => {
     setPosition("");
     setShowForm(false);
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   };
 
   return (
     <>
       {jobData.map((job: any, i: number) => (
         <div
+          id={job.title}
           key={i}
           className={
             !showForm || position === job.title
@@ -215,7 +217,6 @@ export const Jobs = (jobsDataRaw: jobsDataTypes) => {
             name="location"
             onChange={handleMallLocationChange}
             value={mallLocation}
-            // placeholder="Please"
             required
           >
             <option value="">Please select location: </option>
@@ -244,13 +245,13 @@ export const Jobs = (jobsDataRaw: jobsDataTypes) => {
         </div>
 
         <div className="backBtnContainer">
-          <button
-            type="button"
+          <Link
             className="button back-btn"
             onClick={() => handleBackBtn()}
+            href={`/jobs#${position}`}
           >
             <span className="heading">&lt; Back</span>
-          </button>
+          </Link>
         </div>
       </form>
     </>

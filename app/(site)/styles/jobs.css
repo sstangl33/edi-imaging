@@ -1,4 +1,8 @@
 .jobDescriptionWrapper {
-  margin: 2rem 0;
+  margin: 4rem 0;
   border-top: 1px solid #333;
+}
+
+.jobDescriptionWrapper h2 {
+  margin: 4rem 0 1rem;
 }
