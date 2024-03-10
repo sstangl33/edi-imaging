@@ -14,6 +14,7 @@ import HolidayBanner from "@/app/components/HolidayBanner";
 import "../styles/page.css";
 import "../styles/heroBanner.css";
 import "../styles/gallery.css";
+import Link from "next/link";
 
 export const revalidate = 30;
 
@@ -77,6 +78,20 @@ export default async function PageContent({
               width={300}
               height={300}
             />
+          )}
+
+          {!data.title.includes("THANK") ? undefined : (
+            <>
+              <p className="text-center">
+                Thank you for your application! We will be in contact with you
+                soon.
+              </p>
+              <div className="backBtnContainer">
+                <Link className="button back-btn" href="/jobs">
+                  <span className="heading">&lt; Back</span>
+                </Link>
+              </div>
+            </>
           )}
         </section>
         <section className="row">
