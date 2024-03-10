@@ -14,6 +14,7 @@
   align-items: flex-start;
   flex-wrap: wrap;
   overflow: hidden;
+  text-decoration: none;
   transition: background-color 0.5s ease-in-out;
 }
 
@@ -29,7 +30,7 @@
 
 .bannerTitle {
   font-size: 2rem;
-  line-height: 2.625rem;
+  line-height: 2.2rem;
   letter-spacing: 1px;
   font-weight: 400;
   color: #fff;
