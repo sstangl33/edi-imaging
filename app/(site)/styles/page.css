@@ -1,0 +1,116 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: block;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  font-weight: 300;
+  color: #333;
+  margin: 3rem 0;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+h2,
+h3 {
+  margin: 2.5rem 0 1rem;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+  color: #333;
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h2 + h3 {
+  margin-top: -0.5rem;
+}
+
+p,
+address {
+  margin: 0 0 2rem;
+  font-style: normal;
+}
+
+a {
+  color: #2e4395;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+a:hover {
+  outline: none;
+  color: #333;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1rem;
+  margin: 0 0 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+img {
+  width: 500px;
+  max-width: 50%;
+  float: right;
+  height: auto;
+  margin: 0 0 1rem 2rem;
+}
+
+p + img {
+  margin-top: -1rem;
+}
+
+.contactInfoWrapper {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.contactInfoWrapper p,
+.contactInfoWrapper address {
+  margin: 0 0 1rem;
+}
+
+.pdpSeal {
+  width: 200px;
+  height: auto;
+  float: none;
+  display: block;
+  margin: 2rem auto 2rem;
+}
+
+@media (max-width: 1244px) {
+  .container {
+    padding: 1rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  img {
+    float: none;
+    width: 100%;
+    max-width: initial;
+    margin: 1rem auto;
+  }
+}

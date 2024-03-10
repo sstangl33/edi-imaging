@@ -1,0 +1,108 @@
+.footerWrapper {
+  width: 100%;
+  margin: 80px 0 0;
+  padding: 0.5rem;
+  background-color: #131313;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 1rem 2rem;
+  display: flex;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #888;
+}
+
+footer section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer .title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+footer .logoWrapper {
+  justify-content: center;
+  opacity: 0.75;
+  width: 100%;
+  display: flex;
+}
+
+footer .logoWrapper img {
+  width: 175px;
+  max-width: 80%;
+  margin: 0;
+}
+
+footer .addressWrapper {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+footer .addressWrapper address {
+  font-style: normal;
+  margin: 0;
+}
+
+footer .addressWrapper a {
+  color: #888;
+  text-decoration: underline;
+}
+
+footer .addressWrapper a:hover {
+  color: #3f56ad;
+}
+
+.footerWrapper .copyrightWrapper {
+  width: 100%;
+}
+
+.footerWrapper .copyright {
+  color: #888;
+  text-align: center;
+  margin: 16px;
+  margin: 10px 0 0;
+  width: 100%;
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer section {
+    margin: 1rem 0;
+  }
+
+  footer .logoWrapper {
+    padding: 0;
+  }
+
+  footer .logoWrapper img {
+    width: 140px;
+  }
+
+  footer .addressWrapper {
+    text-align: center;
+    align-items: center;
+  }
+
+  footer .addressWrapper address {
+    text-align: center;
+  }
+}

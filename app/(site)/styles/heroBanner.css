@@ -1,0 +1,32 @@
+.heroBanner {
+  height: auto;
+  width: 100%;
+  max-width: 1244px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.heroBannerImgWrapper {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  float: none;
+  opacity: 1;
+  position: relative;
+}
+
+.heroBannerImg {
+  width: 100%;
+  max-width: initial;
+  height: auto;
+  min-height: 250px;
+  margin: 0 auto;
+  position: relative;
+  object-fit: cover;
+}
