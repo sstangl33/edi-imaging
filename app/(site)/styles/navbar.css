@@ -154,6 +154,10 @@ nav {
   border-bottom: 4px solid #3f56ad;
 }
 
+.navLinks li a:hover {
+  transition: border 0.5s ease-in;
+}
+
 @media screen and (max-width: 1500px) {
   .logoWrapper {
     padding-left: 2rem;
