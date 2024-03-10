@@ -7,6 +7,7 @@ import useScrollDirection from "../(site)/lib/useScrollDirection";
 import { headerDataTypes } from "@/sanity/lib/types";
 import "../(site)/styles/navbar.css";
 import "../(site)/styles/hamburgerMenu.css";
+import { usePathname } from "next/navigation";
 
 interface MyCustomCSS extends CSSProperties {
   "--animateOrder": number;
@@ -23,6 +24,8 @@ export default function Navbar(headerDataRaw: headerDataTypes) {
   const headerDataArray = headerData[0];
   const { title, navTitle1, navTitle2, logoUrl } = headerDataArray;
   const navLinks = Object.values(headerDataArray.navItems);
+
+  const currentRoute = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -119,6 +122,9 @@ export default function Navbar(headerDataRaw: headerDataTypes) {
                     "--animateOrder": index + 1,
                     "--length": navLinks.length + 1,
                   } as MyCustomCSS
+                }
+                className={
+                  currentRoute === `/${link.currentSlug}` ? "active" : undefined
                 }
                 onClick={() => {
                   setMobileNavOpen(false);
