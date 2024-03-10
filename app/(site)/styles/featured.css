@@ -57,7 +57,7 @@
 }
 
 .slideTitle {
-  font-weight: 600;
+  font-weight: 200;
   letter-spacing: 3px;
   margin: 0;
   font-size: 2.5rem;
@@ -223,6 +223,7 @@
 
   .slideNavArrow {
     top: 50%;
+    opacity: 1;
   }
 }
 
