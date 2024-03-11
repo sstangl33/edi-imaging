@@ -106,6 +106,7 @@ export default function Navbar(headerDataRaw: headerDataTypes) {
                   "--length": navLinks.length + 1,
                 } as MyCustomCSS
               }
+              className={currentRoute === "/" ? "active" : undefined}
               onClick={() => {
                 setMobileNavOpen(false);
               }}
