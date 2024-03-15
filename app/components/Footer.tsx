@@ -44,7 +44,7 @@ export default async function Footer() {
       </footer>
       <section className="copyrightWrapper">
         <p className="copyright">
-          {`Copyright © ${getYear()} ${title}. All Rights Reserved.`}
+          Copyright &copy; {getYear()} {title}. All Rights Reserved.
         </p>
       </section>
     </div>
