@@ -20,7 +20,7 @@ export default async function Categories() {
               : ""
           }`}
         >
-          <h1 className="catTextTitle">{categoryDataRaw[0].title}</h1>
+          <h1 className="catTextTitle">{categoryDataRaw[0].navTitle1}</h1>
           <p className="catText">{categoryDataRaw[0].tagline}</p>
         </div>
         {categoryData[0].categories.map((category: any, index) => (

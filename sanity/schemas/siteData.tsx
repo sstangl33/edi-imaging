@@ -15,7 +15,7 @@ export const siteData = defineType({
       title: "Navigation Title - 1st Row",
       type: "string",
       description:
-        "The link names in this site's navigation are designed to have two rows. This case-sensitive field generates the first row of the title for the home page that will appear in the navigation.",
+        "The link names in this site's navigation are designed to have two rows and to be uppercase. This case-sensitive field generates the first row of the title for the home page that will appear in the navigation. This field will also generate the business title that appears on the Home page.",
     },
     {
       name: "navTitle2",

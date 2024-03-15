@@ -68,6 +68,7 @@ export async function getUniversalHolidayBannerData() {
 export async function getCategoryData() {
   const query = `*[_type == 'siteData'] {
     title,
+    navTitle1,
     tagline,
     categories[] -> {
       navTitle1,
