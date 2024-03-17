@@ -113,6 +113,7 @@ export default function Navbar(headerDataRaw: headerDataTypes) {
             >
               {`${navTitle1}\n${navTitle2}`}
             </Link>
+            <div className="underline" />
           </li>
           {navLinks?.map((link: any, index) => (
             <li key={`${link.title}-${index}`}>
@@ -133,6 +134,7 @@ export default function Navbar(headerDataRaw: headerDataTypes) {
               >
                 {`${link.navTitle1}\n${link.navTitle2}`}
               </Link>
+              <div className="underline" />
             </li>
           ))}
         </ul>

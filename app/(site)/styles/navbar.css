@@ -139,7 +139,6 @@ nav {
   max-width: 140px;
   padding: 0 0.25rem;
   margin: 0 0.65rem;
-  border-bottom: 4px solid #fff;
   white-space: pre-wrap;
   display: inline-block;
   transition: none;
@@ -149,13 +148,19 @@ nav {
   transition: none;
 }
 
-.navLinks li a.active,
-.navLinks li a:hover {
-  border-bottom: 4px solid #3f56ad;
+.navLinks .underline {
+  height: 4px;
+  width: 90%;
+  margin: 0 auto;
+  background: #3f56ad;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+  transform-origin: center;
 }
 
-.navLinks li a:hover {
-  transition: border 0.5s ease-in;
+.navLinks li a.active + .underline,
+.navLinks li a:hover + .underline {
+  transform: scaleX(1);
 }
 
 @media screen and (max-width: 1500px) {
@@ -259,7 +264,6 @@ nav {
     font-size: 0.85rem;
     line-height: 1.2;
     color: #fff;
-    border: none;
     max-width: 180px;
     position: relative;
     transform: translateY(50px);
@@ -284,6 +288,10 @@ nav {
     transition-delay: calc(
       (var(--animateOrder) * 50ms) + (var(--length) * 50ms)
     );
+  }
+
+  .navLinks li a .underline {
+    display: none;
   }
 
   .menuIconWrapper {

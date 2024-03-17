@@ -95,7 +95,7 @@ export default async function PageContent({
           )}
         </section>
         <section className="row">
-          {galleryData == null
+          {!galleryData
             ? undefined
             : galleryData.map((image: any, i: any) => (
                 <div className="imageWrapper" key={i}>
