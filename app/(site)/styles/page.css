@@ -115,3 +115,10 @@ p + img {
     margin: 1rem auto;
   }
 }
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
