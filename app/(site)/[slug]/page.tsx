@@ -26,8 +26,9 @@ export default async function PageContent({
   const data: pageDataTypes = await getPageData(params.slug);
   const holidayBannerDataRaw = await getUniversalHolidayBannerData();
   const jobsDataRaw = await getJobsData(params.slug);
-  const galleryData =
-    data.imageGallery == null ? undefined : data.imageGallery[0].imageGallery;
+  const galleryData = !data.imageGallery
+    ? undefined
+    : data.imageGallery[0].imageGallery;
 
   return (
     <>
