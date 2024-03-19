@@ -32,6 +32,7 @@ export default function Featured(carouselDataRaw: carouselDataTypes) {
             src={slide.slideImageUrl}
             alt={slide.slideImage.alt}
             fill
+            priority
           />
           <div className="slideTextBoxWrapper">
             <div className="slideTextBox">
