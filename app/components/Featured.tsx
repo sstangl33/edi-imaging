@@ -41,11 +41,12 @@ export default function Featured(carouselDataRaw: carouselDataTypes) {
                 Learn more
               </Link>
               <div className="slideNavigation">
-                {carouselData.map((i, j) => (
+                {carouselData.map((link: any, j) => (
                   <a
                     className={j !== index ? "slideIcon" : "slideIcon active"}
                     key={j}
                     href="#"
+                    aria-label={link.slideText}
                     onClick={() => setIndex(j)}
                   ></a>
                 ))}
