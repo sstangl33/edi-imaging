@@ -19,6 +19,7 @@ export const carousel = defineType({
       name: "slideImage",
       title: "Slide Image",
       type: "image",
+      description: "Carousel images should be 2000x885 pixels.",
       options: {
         hotspot: true,
       },

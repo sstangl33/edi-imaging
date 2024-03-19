@@ -54,6 +54,8 @@ export const pages = defineType({
       name: "thumbnailImage",
       title: "Thumbnail Image",
       type: "image",
+      description:
+        "Thumbnail images will appear on the homepage. Do not add an image here if you do not want a link for this page to appear on the home page. Thumbnail images should be 700x436 pixels.",
       options: {
         hotspot: true,
       },
