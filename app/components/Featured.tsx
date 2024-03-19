@@ -31,8 +31,7 @@ export default function Featured(carouselDataRaw: carouselDataTypes) {
             className="slideImg"
             src={slide.slideImageUrl}
             alt={slide.slideImage.alt}
-            width={3000}
-            height={1328}
+            fill
           />
           <div className="slideTextBoxWrapper">
             <div className="slideTextBox">
