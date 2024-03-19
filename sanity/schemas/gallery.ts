@@ -2,7 +2,7 @@ import { defineType } from "sanity";
 
 export const gallery = defineType({
   name: "gallery",
-  title: "Gallery",
+  title: "Image Galleries",
   type: "document",
   fields: [
     {

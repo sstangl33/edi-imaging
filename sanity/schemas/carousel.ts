@@ -2,7 +2,7 @@ import { defineType } from "sanity";
 
 export const carousel = defineType({
   name: "carousel",
-  title: "Carousel",
+  title: "Carousel Slides",
   type: "document",
   fields: [
     {

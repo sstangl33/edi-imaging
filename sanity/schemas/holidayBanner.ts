@@ -4,6 +4,9 @@ export const holidayBanner = defineType({
   name: "holidayBanner",
   title: "Holiday Banner",
   type: "document",
+  options: {
+    singleton: true, // Identify this document as a singleton
+  },
   fields: [
     {
       name: "title",

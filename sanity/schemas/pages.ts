@@ -37,6 +37,7 @@ export const pages = defineType({
       name: "bannerImage",
       title: "Banner Image",
       type: "image",
+      description: "This image should be 1224x500px.",
       options: {
         hotspot: true,
       },

@@ -4,6 +4,9 @@ export const siteData = defineType({
   name: "siteData",
   title: "Site Data",
   type: "document",
+  options: {
+    singleton: true, // Identify this document as a singleton
+  },
   fields: [
     {
       name: "title",
