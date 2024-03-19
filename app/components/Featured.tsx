@@ -9,7 +9,8 @@ import { IoIosArrowBack } from "react-icons/io";
 import "../(site)/styles/featured.css";
 
 export default function Featured(carouselDataRaw: carouselDataTypes) {
-  const carouselData = Object.values(carouselDataRaw);
+  const carouselObjects = Object.values(carouselDataRaw);
+  const carouselData = Object.values(carouselObjects[0]);
 
   const [index, setIndex] = useState(0);
 
@@ -24,7 +25,7 @@ export default function Featured(carouselDataRaw: carouselDataTypes) {
 
   return (
     <div className="slider">
-      {carouselData.map((slide, i) => (
+      {carouselData.map((slide: any, i: number) => (
         <div className={i !== index ? "slide" : "slide active"} key={i}>
           <Image
             className="slideImg"

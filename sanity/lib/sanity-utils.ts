@@ -18,13 +18,15 @@ export async function getHeaderData() {
 }
 
 export async function getCarouselData() {
-  const query = `*[_type == 'carousel'] | order(_updatedAt desc) {
-    title,
-    slideText,
-    slideImage,
-    "slideImageUrl": slideImage.asset -> url, 
-    link[] -> {
-      "currentSlug": slug.current,
+  const query = `*[_type == 'siteData'][0] {
+    carouselSlides[] -> {
+      title,
+      slideText,
+      slideImage,
+      "slideImageUrl": slideImage.asset -> url, 
+      link[] -> {
+        "currentSlug": slug.current,
+      }
     }
   }`;
   const siteData = await client.fetch(query);

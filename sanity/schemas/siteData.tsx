@@ -77,7 +77,7 @@ export const siteData = defineType({
       name: "navItems",
       title: "Navigation Items",
       description:
-        "Use the drop-down list below to select the links  that will be displayed on the navigation of your website. The links can be re-order by dragging and dropping.",
+        "Use the drop-down list below to select the links  that will be displayed on the navigation of your website. The links can be re-ordered by dragging and dropping.",
       type: "array",
       of: [
         {
@@ -88,10 +88,24 @@ export const siteData = defineType({
       ],
     },
     {
+      name: "carouselSlides",
+      title: "Carousel Slides",
+      description:
+        "Use the drop-down list below to select the carousel slides that will be displayed on the Home page of your website. The slides can be re-ordered by dragging and dropping.",
+      type: "array",
+      of: [
+        {
+          title: "Reference",
+          type: "reference",
+          to: [{ type: "carousel" }],
+        },
+      ],
+    },
+    {
       name: "categories",
       title: "Categories",
       description:
-        "Use the drop-down list below to select the categories that will be displayed on the Home page of your website. The categories can be re-order by dragging and dropping.",
+        "Use the drop-down list below to select the categories that will be displayed on the Home page of your website. The categories can be re-ordered by dragging and dropping.",
       type: "array",
       of: [
         {
