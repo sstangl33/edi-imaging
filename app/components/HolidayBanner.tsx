@@ -67,8 +67,8 @@ export default function HolidayBanner(
                   ? data?.primaryEasterImage?.alt
                   : data?.primaryChristmasImage?.alt
               }
-              width={300}
-              height={300}
+              width={400}
+              height={400}
             />
           </div>
           <div className="imgWrapper">
@@ -88,8 +88,8 @@ export default function HolidayBanner(
                   ? data?.secondaryChristmasImage?.alt
                   : data?.primaryEasterImage?.alt
               }
-              width={300}
-              height={300}
+              width={400}
+              height={400}
             />
           </div>
           <div className="imgWrapper">
@@ -109,8 +109,8 @@ export default function HolidayBanner(
                   ? data?.tertiaryEasterImage?.alt
                   : data?.tertiaryChristmasImage?.alt
               }
-              width={300}
-              height={300}
+              width={400}
+              height={400}
             />
           </div>
         </div>

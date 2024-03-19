@@ -115,7 +115,7 @@ export const holidayBanner = defineType({
       type: "image",
       validation: (rule) => rule.required(),
       description:
-        "This image will always be seen in the Universal and Christmas banners.",
+        "This image will always be seen in the Universal and Christmas banners. This image should be 400x286 pixels.",
       options: {
         hotspot: true,
       },
@@ -135,7 +135,7 @@ export const holidayBanner = defineType({
       type: "image",
       validation: (rule) => rule.required(),
       description:
-        "This image will always be seen in the Christmas banner, but may not be visible in the Universal banner on some devices.",
+        "This image will always be seen in the Christmas banner, but may not be visible in the Universal banner on some devices. This image should be 400x286 pixels.",
       options: {
         hotspot: true,
       },
@@ -152,7 +152,7 @@ export const holidayBanner = defineType({
       title: "Tertiary Christmas Image",
       type: "image",
       description:
-        "This image will not be seen in the Universal banner, and may not be visible in the Christmas banner on some devices.",
+        "This image will not be seen in the Universal banner, and may not be visible in the Christmas banner on some devices. This image should be 400x286 pixels.",
       options: {
         hotspot: true,
       },
@@ -170,7 +170,7 @@ export const holidayBanner = defineType({
       type: "image",
       validation: (rule) => rule.required(),
       description:
-        "This image will always be seen in the Universal, and Easter banners.",
+        "This image will always be seen in the Universal, and Easter banners. This image should be 400x286 pixels.",
       options: {
         hotspot: true,
       },
@@ -187,7 +187,7 @@ export const holidayBanner = defineType({
       title: "Secondary Easter Image",
       type: "image",
       description:
-        "This image will always be seen in the Easter banner, but will not be visible in the Universal banner.",
+        "This image will always be seen in the Easter banner, but will not be visible in the Universal banner. This image should be 400x286 pixels.",
       options: {
         hotspot: true,
       },
@@ -204,7 +204,7 @@ export const holidayBanner = defineType({
       title: "Tertiary Easter Image",
       type: "image",
       description:
-        "This image will not be seen in the Universal banner, and may not be visible in the Easter banner on some devices.",
+        "This image will not be seen in the Universal banner, and may not be visible in the Easter banner on some devices. This image should be 400x286 pixels.",
       options: {
         hotspot: true,
       },

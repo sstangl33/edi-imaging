@@ -26,7 +26,9 @@ export default async function Categories() {
         {categoryData[0].categories.map((category: any, index) => (
           <div key={index} className="catCard">
             <Link className="catLink" href={`/${category.currentSlug}`}>
-              <p className="catLinkText">{`${category.navTitle1} ${category.navTitle2}`}</p>
+              <p className="catLinkText">
+                {`${category.navTitle1} ${category.navTitle2}`}
+              </p>
             </Link>
             {!category.thumbnailImageUrl ? undefined : (
               <Image
@@ -34,7 +36,7 @@ export default async function Categories() {
                 src={category.thumbnailImageUrl}
                 alt={category.thumbnailImage.alt}
                 fill
-                sizes="(max-width: 580px)"
+                sizes="(max-width: 768px) 100vw, (max-width: 1244px) 50vw, 33vw"
               />
             )}
           </div>

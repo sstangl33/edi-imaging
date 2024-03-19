@@ -70,7 +70,7 @@
   letter-spacing: 1.12px;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   padding: 15px 0 10px;
-  margin-top: 8px;
+  margin: 0.5rem 0 0;
 }
 
 .slider .button {
