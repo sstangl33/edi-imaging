@@ -166,3 +166,17 @@ export async function getGalleryData() {
 
   return data;
 }
+
+export async function getNotFoundData() {
+  const query = `*[_type == "siteData"][0] {
+    title,
+    notFoundTitle,
+    notFoundText,
+    "notFoundBannerUrl": notFoundBanner.asset -> url,
+    "notFoundBannerAlt": notFoundBanner.asset -> alt,
+  }`;
+
+  const data = await client.fetch(query);
+
+  return data;
+}

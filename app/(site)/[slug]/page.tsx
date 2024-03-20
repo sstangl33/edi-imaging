@@ -16,6 +16,7 @@ import "../styles/heroBanner.css";
 import "../styles/gallery.css";
 import Link from "next/link";
 import { Metadata } from "next";
+import { notFound } from "next/navigation";
 
 export const revalidate = 30;
 
@@ -25,6 +26,8 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const data: pageDataTypes = await getPageData(params.slug);
+
+  if (!data) notFound();
 
   return {
     title:

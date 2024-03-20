@@ -96,3 +96,11 @@ export type jobsDataTypes = {
   content: any;
   jobsData: any;
 };
+
+export type notFoundDataTypes = {
+  title: string;
+  notFoundBannerUrl: string;
+  notFoundBannerAlt: string;
+  notFoundTitle: string;
+  notFoundText: string;
+};

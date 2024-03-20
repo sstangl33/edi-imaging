@@ -48,6 +48,11 @@ export const siteData = defineType({
       type: "string",
     },
     {
+      name: "telephone2",
+      title: "Business Telephone Number 2",
+      type: "string",
+    },
+    {
       name: "email",
       title: "Business Email Address",
       type: "string",
@@ -58,6 +63,23 @@ export const siteData = defineType({
       type: "string",
       description:
         "All emails sent from this site will contain the Subject that is entered here.",
+    },
+    {
+      name: "email2",
+      title: "Business Email Address 2",
+      type: "string",
+    },
+    {
+      name: "emailSubject2",
+      title: "Email Subject 2",
+      type: "string",
+      description:
+        "All emails sent from this site will contain the Subject that is entered here.",
+    },
+    {
+      name: "certSeal",
+      title: "Certification Seal",
+      type: "image",
     },
     {
       name: "logo",
@@ -117,6 +139,25 @@ export const siteData = defineType({
           to: [{ type: "pages" }],
         },
       ],
+    },
+    {
+      name: "notFoundBanner",
+      title: "404 Banner Image",
+      type: "image",
+      description:
+        "This is the banner that will appear on the 404 page. This image should be 1224x500px.",
+    },
+    {
+      name: "notFoundTitle",
+      title: "404 Title",
+      type: "string",
+      description: "This is the title that will appear on the 404 page.",
+    },
+    {
+      name: "notFoundText",
+      title: "404 Text",
+      type: "string",
+      description: "This is the text that will appear on the 404 page.",
     },
   ],
 });
