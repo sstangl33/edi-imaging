@@ -15,8 +15,22 @@ import "../styles/page.css";
 import "../styles/heroBanner.css";
 import "../styles/gallery.css";
 import Link from "next/link";
+import { Metadata } from "next";
 
 export const revalidate = 30;
+
+type Props = {
+  params: { slug: string };
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const data: pageDataTypes = await getPageData(params.slug);
+
+  return {
+    title:
+      data.currentSlug.charAt(0).toUpperCase() + data.currentSlug.substring(1),
+  };
+}
 
 export default async function PageContent({
   params,

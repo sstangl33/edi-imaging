@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "eDI Imaging",
+  title: { default: "eDI Imaging", template: "eDI Imaging | %s" },
   description: "Creating memories and smiles for more than 20 years.",
 };
 
