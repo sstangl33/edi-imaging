@@ -38,10 +38,11 @@ export default async function PageContent({
             <Image
               src={urlForImage(data?.bannerImage)}
               alt={data?.bannerImage.alt}
-              width={1244}
-              height={507}
+              width={1224}
+              height={500}
               priority
               className="heroBannerImg"
+              sizes="(min-width: 1320px) 1244px, calc(94.4vw + 17px)"
             />
           )}
         </div>

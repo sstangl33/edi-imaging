@@ -69,6 +69,7 @@ export default function HolidayBanner(
               }
               width={400}
               height={400}
+              priority
             />
           </div>
           <div className="imgWrapper">
@@ -90,6 +91,7 @@ export default function HolidayBanner(
               }
               width={400}
               height={400}
+              priority
             />
           </div>
           <div className="imgWrapper">
@@ -111,6 +113,7 @@ export default function HolidayBanner(
               }
               width={400}
               height={400}
+              priority
             />
           </div>
         </div>

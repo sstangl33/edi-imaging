@@ -1,40 +1,29 @@
 .slider {
-  height: 750px;
-  background-color: #fff;
   width: 100%;
-  background-color: #000;
+  height: 750px;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  z-index: 1;
+  background-color: #000;
 }
 
 .slide {
   width: 100%;
   height: 100%;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  display: flex;
+  overflow: hidden;
 }
 
 .slide img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   max-width: 100%;
   float: none;
   margin: 0;
-}
-
-.slider .slide.active {
-  transition: 1s;
-  opacity: 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  flex-shrink: 0;
+  flex-grow: 0;
+  transition: translate 0.5s ease-in-out;
+  transition-delay: 0.5s;
 }
 
 .slideTextBoxWrapper {
@@ -48,6 +37,14 @@
   justify-content: center;
   width: 45%;
   height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slideTextBoxWrapper.active {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  transition-delay: 1s;
 }
 
 .slideTextBox {
@@ -57,11 +54,13 @@
 }
 
 .slideTitle {
+  color: #fff;
   font-weight: 200;
   letter-spacing: 2px;
   margin: 0;
   font-size: 2.5rem;
   line-height: 1.2;
+  cursor: initial;
 }
 
 .slideText {
@@ -71,13 +70,18 @@
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   padding: 15px 0 10px;
   margin: 0.5rem 0 0;
+  cursor: initial;
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  outline: none;
 }
 
 .slider .button {
   margin: 1rem 0 2rem;
   max-width: 150px;
   font-size: 0.9rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 1rem;
   min-width: initial;
 }
 
@@ -141,11 +145,11 @@
 }
 
 .slider:hover .slideNavArrow {
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .slider:hover .slideNavArrow:hover {
-  opacity: 0.75;
+  opacity: 1;
 }
 
 @media (max-width: 1600px) {

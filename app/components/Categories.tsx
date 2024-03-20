@@ -36,7 +36,7 @@ export default async function Categories() {
                 src={category.thumbnailImageUrl}
                 alt={category.thumbnailImage.alt}
                 fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1244px) 50vw, 33vw"
+                sizes="(min-width: 1260px) 394px, (min-width: 780px) calc(50vw - 63px), 90vw"
               />
             )}
           </div>
