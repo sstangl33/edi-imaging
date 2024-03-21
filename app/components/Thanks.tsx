@@ -9,7 +9,7 @@ export default async function Thanks() {
     <>
       <p className="text-center">{formResponseData.formResponseText}</p>
       <div className="backBtnContainer">
-        <a className="button back-btn" href="/jobs">
+        <a className="button back-btn" href="/">
           <span className="heading">&lt; Back</span>
         </a>
       </div>
