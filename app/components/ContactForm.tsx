@@ -5,7 +5,6 @@ import { useState } from "react";
 export const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [position, setPosition] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
@@ -24,14 +23,14 @@ export const ContactForm = () => {
 
   return (
     <>
+      <h2 className="formTitle">{`Message eDI Imaging ${
+        !subject || subject === "General Interest" ? "" : `about ${subject}`
+      }`}</h2>
       <form
         className="contactForm"
         action="https://formsubmit.co/info@ediimaging.com"
         method="POST"
       >
-        <h2>{`Message eDI Imaging ${
-          !subject || subject === "General Interest" ? "" : `about ${subject}`
-        }`}</h2>
         <input
           type="hidden"
           name="_subject"

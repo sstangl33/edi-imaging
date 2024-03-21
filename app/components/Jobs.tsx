@@ -92,12 +92,12 @@ export const Jobs = (jobsDataRaw: jobsDataTypes) => {
         </div>
       ))}
 
+      <h2 className="formTitle">{`${position} Application`}</h2>
       <form
         className={showForm ? "jobForm" : "hidden"}
         action="https://formsubmit.co/info@ediimaging.com"
         method="POST"
       >
-        <h2>{`${position} Application`}</h2>
         <input
           type="hidden"
           name="_subject"
