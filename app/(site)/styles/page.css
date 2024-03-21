@@ -80,9 +80,12 @@ p + img {
   margin: 2rem 0;
 }
 
-.contactInfoWrapper p,
-.contactInfoWrapper address {
+.contactInfoWrapper p {
   margin: 0 0 1rem;
+}
+
+.contactInfoWrapper address {
+  margin: 0;
 }
 
 .pdpSeal {

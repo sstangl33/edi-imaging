@@ -141,6 +141,13 @@ export const siteData = defineType({
       ],
     },
     {
+      name: "formResponseText",
+      title: "Form Response Text",
+      type: "string",
+      description:
+        "This is the text that will appear on the page after someone submits a form. Make this text generic enough to make sense for both job applications and general inquiries.",
+    },
+    {
       name: "notFoundBanner",
       title: "404 Banner Image",
       type: "image",

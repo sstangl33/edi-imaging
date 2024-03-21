@@ -87,14 +87,22 @@ export type contactDataTypes = {
   streetAddress: string;
   cityStateZip: string;
   telephone: string;
+  telephone2: string;
   email: string;
+  email2: string;
   emailSubject: string;
+  emailSubject2: string;
 };
 
 export type jobsDataTypes = {
   title: string;
   content: any;
   jobsData: any;
+};
+
+export type formResponseDataTypes = {
+  title: string;
+  formResponseText: string;
 };
 
 export type notFoundDataTypes = {

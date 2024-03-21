@@ -1,4 +1,5 @@
 import { contactDataTypes } from "@/sanity/lib/types";
+import { ContactForm } from "./ContactForm";
 
 export const Contact = (contactData: contactDataTypes) => {
   return (
@@ -10,20 +11,18 @@ export const Contact = (contactData: contactDataTypes) => {
         <br />
         {contactData.cityStateZip}
       </address>
-
+      <a href={`tel:+${contactData?.telephone.replace(/\D/g, "")}`}>
+        {contactData.telephone}
+      </a>
+      <br /> <br />
       <p>
-        <a href={`tel:+${contactData.telephone.replace(/\D/g, "")}`}>
-          {contactData.telephone}
+        For Drone Photography call:
+        <br />
+        <a href={`tel:+${contactData?.telephone2.replace(/\D/g, "")}`}>
+          {contactData?.telephone2}
         </a>
       </p>
-      <p>
-        {" "}
-        <a
-          href={`mailto:${contactData.email}?subject=${contactData.emailSubject}`}
-        >
-          {contactData.email}
-        </a>
-      </p>
+      <ContactForm />
     </div>
   );
 };

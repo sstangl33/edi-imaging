@@ -93,10 +93,11 @@ export const Jobs = (jobsDataRaw: jobsDataTypes) => {
       ))}
 
       <form
-        className={showForm ? "" : "hidden"}
+        className={showForm ? "jobForm" : "hidden"}
         action="https://formsubmit.co/info@ediimaging.com"
         method="POST"
       >
+        <h2>{`${position} Application`}</h2>
         <input
           type="hidden"
           name="_subject"
@@ -108,133 +109,134 @@ export const Jobs = (jobsDataRaw: jobsDataTypes) => {
           value="https://ediimaging.com/thanks"
         />
         <input type="text" name="_honey" className="hidden" />
-        <div className="fieldWrapper">
-          <label>Name </label>
-          <br />
-          <input
-            name="name"
-            onChange={handleNameChange}
-            value={name}
-            required
-          />
-        </div>
 
-        <div className="fieldWrapper">
-          <label>Address 1</label>
-          <br />
-          <input
-            name="address1"
-            onChange={handleAddress1Change}
-            value={address1}
-            required
-          />
-        </div>
+        <div className="colWrapper">
+          <div className="w-50">
+            <div className="fieldWrapper">
+              <label>Name </label>
+              <input
+                name="name"
+                onChange={handleNameChange}
+                value={name}
+                required
+              />
+            </div>
 
-        <div className="fieldWrapper">
-          <label>Address 2 (optional)</label>
-          <br />
-          <input
-            name="address2"
-            onChange={handleAddress2Change}
-            value={address2}
-          />
-        </div>
+            <div className="fieldWrapper">
+              <label>Address 1</label>
+              <input
+                name="address1"
+                onChange={handleAddress1Change}
+                value={address1}
+                required
+              />
+            </div>
 
-        <div className="fieldWrapper">
-          <div className="w-34">
-            <label>State</label>
-            <br />
-            <input
-              name="state"
-              onChange={handleStateChange}
-              value={state}
-              required
-            />
+            <div className="fieldWrapper">
+              <label>Address 2 (optional)</label>
+              <input
+                name="address2"
+                onChange={handleAddress2Change}
+                value={address2}
+              />
+            </div>
+
+            <div className="fieldWrapper">
+              <div className="w-34">
+                <label>State</label>
+
+                <input
+                  name="state"
+                  onChange={handleStateChange}
+                  value={state}
+                  required
+                />
+              </div>
+
+              <div className="w-66">
+                <label>Zip Code</label>
+
+                <input
+                  name="zipcode"
+                  onChange={handleZipcodeChange}
+                  value={zipcode}
+                  required
+                />
+              </div>
+            </div>
+
+            <div className="fieldWrapper">
+              <label>Phone Number </label>
+              <input
+                name="phoneNumber"
+                onChange={handlePhoneNumberChange}
+                value={phoneNumber}
+                required
+              />
+            </div>
           </div>
 
-          <div className="w-66">
-            <label>Zip Code</label>
-            <br />
-            <input
-              name="zipcode"
-              onChange={handleZipcodeChange}
-              value={zipcode}
-              required
-            />
+          <div className="w-50">
+            <div className="fieldWrapper">
+              <label>Email </label>
+              <input
+                name="email"
+                onChange={handleEmailChange}
+                value={email}
+                required
+              />
+            </div>
+
+            <div className="hidden">
+              <label>Position </label>
+              <input
+                type="hidden"
+                name="position"
+                onChange={handlePositionChange}
+                value={position}
+                required
+              />
+            </div>
+
+            <div className="fieldWrapper">
+              <label>Preferred Mall Location </label>
+              <select
+                name="location"
+                onChange={handleMallLocationChange}
+                value={mallLocation}
+                required
+              >
+                <option value="">Please select location: </option>
+                <option value="Eastwood Mall, Niles, OH">
+                  Eastwood Mall, Niles, OH
+                </option>
+                <option value="Ohio Valley Mall, St. Clairsville, OH">
+                  Ohio Valley Mall, St. Clairsville, OH
+                </option>
+                <option value="Millcreek Mall, Erie, PA">
+                  Millcreek Mall, Erie, PA
+                </option>
+                <option value="Hunington Mall, Barboursville, WV">
+                  Hunington Mall, Barboursville, WV
+                </option>
+                <option value="Spotsylvania Towne Centre, Spotsylvania, VA">
+                  Spotsylvania Towne Centre, Spotsylvania, VA
+                </option>
+              </select>
+            </div>
+
+            <div className="fieldWrapper">
+              <label>
+                Experience (Optional - Maximum length: 250 characters){" "}
+              </label>
+              <textarea
+                maxLength={250}
+                name="experience"
+                onChange={handleExperienceChange}
+                value={experience}
+              />
+            </div>
           </div>
-        </div>
-
-        <div className="fieldWrapper">
-          <label>Phone Number </label>
-          <br />
-          <input
-            name="phoneNumber"
-            onChange={handlePhoneNumberChange}
-            value={phoneNumber}
-            required
-          />
-        </div>
-
-        <div className="fieldWrapper">
-          <label>Email </label>
-          <br />
-          <input
-            name="email"
-            onChange={handleEmailChange}
-            value={email}
-            required
-          />
-        </div>
-
-        <div className="hidden">
-          <label>Position </label>
-          <br />
-          <input
-            type="hidden"
-            name="position"
-            onChange={handlePositionChange}
-            value={position}
-            required
-          />
-        </div>
-
-        <div className="fieldWrapper">
-          <label>Experience (Optional - Maximum length: 250 characters) </label>
-          <br />
-          <textarea
-            maxLength={250}
-            name="experience"
-            onChange={handleExperienceChange}
-            value={experience}
-          />
-        </div>
-
-        <div className="fieldWrapper">
-          <label>Preferred Mall Location </label>
-          <br />
-          <select
-            name="location"
-            onChange={handleMallLocationChange}
-            value={mallLocation}
-            required
-          >
-            <option value="">Please select location: </option>
-            <option value="Eastwood Mall, Niles, OH">
-              Eastwood Mall, Niles, OH
-            </option>
-            <option value="Ohio Valley Mall, St. Clairsville, OH">
-              Ohio Valley Mall, St. Clairsville, OH
-            </option>
-            <option value="Millcreek Mall, Erie, PA">
-              Millcreek Mall, Erie, PA
-            </option>
-            <option value="Hunington Mall, Barboursville, WV">
-              Hunington Mall, Barboursville, WV
-            </option>
-            <option value="Spotsylvania Towne Centre, Spotsylvania, VA">
-              Spotsylvania Towne Centre, Spotsylvania, VA
-            </option>
-          </select>
         </div>
 
         <div className="btn-container">
@@ -242,17 +244,17 @@ export const Jobs = (jobsDataRaw: jobsDataTypes) => {
             Submit Application
           </button>
         </div>
-
-        <div className="backBtnContainer">
-          <Link
-            className="button back-btn"
-            onClick={() => handleBackBtn()}
-            href={`/jobs#${position}`}
-          >
-            <span className="heading">&lt; Back</span>
-          </Link>
-        </div>
       </form>
+
+      <div className="backBtnContainer">
+        <Link
+          className="button back-btn"
+          onClick={() => handleBackBtn()}
+          href={`/jobs#${position}`}
+        >
+          <span className="heading">&lt; Back</span>
+        </Link>
+      </div>
     </>
   );
 };

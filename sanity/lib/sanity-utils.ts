@@ -109,8 +109,11 @@ export async function getPageData(slug: string) {
       streetAddress,
       cityStateZip,
       telephone,
+      telephone2,
       email,
-      emailSubject
+      email2,
+      emailSubject,
+      emailSubject2,
     },
     imageGallery[] -> {
       imageGallery[] {
@@ -160,6 +163,17 @@ export async function getGalleryData() {
     imageGallery[] {
       "imageUrl": asset -> url
     }
+  }`;
+
+  const data = await client.fetch(query);
+
+  return data;
+}
+
+export async function getFormResponseData() {
+  const query = `*[_type == "siteData"][0] {
+    title,
+    formResponseText
   }`;
 
   const data = await client.fetch(query);

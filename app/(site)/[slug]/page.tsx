@@ -17,6 +17,7 @@ import "../styles/gallery.css";
 import Link from "next/link";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Thanks from "@/app/components/Thanks";
 
 export const revalidate = 30;
 
@@ -84,8 +85,11 @@ export default async function PageContent({
                   streetAddress={item.streetAddress}
                   cityStateZip={item.cityStateZip}
                   telephone={item.telephone}
+                  telephone2={item.telephone2}
                   email={item.email}
+                  email2={item.email2}
                   emailSubject={item.emailSubject}
+                  emailSubject2={item.emailSubject2}
                 />
               ))}
 
@@ -99,19 +103,7 @@ export default async function PageContent({
             />
           )}
 
-          {!data.title.includes("THANK") ? undefined : (
-            <>
-              <p className="text-center">
-                Thank you for your application! We will be in contact with you
-                soon.
-              </p>
-              <div className="backBtnContainer">
-                <Link className="button back-btn" href="/jobs">
-                  <span className="heading">&lt; Back</span>
-                </Link>
-              </div>
-            </>
-          )}
+          {!data.title.includes("THANK") ? undefined : <Thanks />}
         </section>
         <section className="row">
           {!galleryData

@@ -1,15 +1,13 @@
+import { formResponseDataTypes } from "@/sanity/lib/types";
 import "../(site)/styles/page.css";
+import { getFormResponseData } from "@/sanity/lib/sanity-utils";
 
-export default function Thanks() {
+export default async function Thanks() {
+  const formResponseData: formResponseDataTypes = await getFormResponseData();
+
   return (
     <>
-      <div className="container">
-        <h1 className="title">Thank you</h1>
-        <p>
-          Thank you for your application! We will be in contact with you soon.
-        </p>
-      </div>
-
+      <p className="text-center">{formResponseData.formResponseText}</p>
       <div className="backBtnContainer">
         <a className="button back-btn" href="/jobs">
           <span className="heading">&lt; Back</span>
