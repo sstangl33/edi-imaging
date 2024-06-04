@@ -105,7 +105,7 @@ export default async function PageContent({
 
           {!data.title.includes("THANK") ? undefined : <Thanks />}
         </section>
-        <section className="row">
+        <section className="row gallery">
           {!galleryData
             ? undefined
             : galleryData.map((image: any, i: any) => (
