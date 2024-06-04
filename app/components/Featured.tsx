@@ -13,8 +13,6 @@ export default function Featured(carouselDataRaw: carouselDataTypes) {
   const carouselData = Object.values(carouselObjects[0]);
   const caruoselSlideDuration = carouselDataRaw.slideDuration;
 
-  console.log("Duration: ", carouselDataRaw.slideDuration);
-
   const [imageIndex, setImageIndex] = useState(0);
 
   const showPrevImage = () => {
