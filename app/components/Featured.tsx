@@ -11,7 +11,6 @@ import "../(site)/styles/featured.css";
 export default function Featured(carouselDataRaw: carouselDataTypes) {
   const carouselObjects = Object.values(carouselDataRaw);
   const carouselData = Object.values(carouselObjects[0]);
-  console.log("Slideshow Data: ", carouselData);
 
   const [imageIndex, setImageIndex] = useState(0);
 
