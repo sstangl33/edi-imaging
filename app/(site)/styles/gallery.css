@@ -8,11 +8,15 @@
 }
 
 .imageWrapper {
-  margin: 0.7rem 0;
+  margin: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   width: calc(25% - 1rem);
+}
+
+.row .imageWrapper {
+  justify-content: center;
 }
 
 .imageWrapper .image {
