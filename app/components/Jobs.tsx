@@ -217,7 +217,7 @@ export const Jobs = (jobsDataRaw: jobsDataTypes) => {
                   Millcreek Mall, Erie, PA
                 </option>
                 <option value="Hunington Mall, Barboursville, WV">
-                  Hunington Mall, Barboursville, WV
+                  Huntington Mall, Barboursville, WV
                 </option>
                 <option value="Spotsylvania Towne Centre, Spotsylvania, VA">
                   Spotsylvania Towne Centre, Spotsylvania, VA
