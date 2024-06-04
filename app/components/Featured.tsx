@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { carouselDataTypes } from "@/sanity/lib/types";
 import { IoIosArrowForward } from "react-icons/io";
@@ -11,6 +11,7 @@ import "../(site)/styles/featured.css";
 export default function Featured(carouselDataRaw: carouselDataTypes) {
   const carouselObjects = Object.values(carouselDataRaw);
   const carouselData = Object.values(carouselObjects[0]);
+  console.log("Slideshow Data: ", carouselData);
 
   const [imageIndex, setImageIndex] = useState(0);
 
@@ -25,6 +26,15 @@ export default function Featured(carouselDataRaw: carouselDataTypes) {
       index === carouselData.length - 1 ? 0 : index + 1
     );
   };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      showNextImage();
+    }, 7000);
+    return () => {
+      clearTimeout(timer);
+    };
+  });
 
   return (
     <div className="slider">
