@@ -11,6 +11,9 @@ import "../(site)/styles/featured.css";
 export default function Featured(carouselDataRaw: carouselDataTypes) {
   const carouselObjects = Object.values(carouselDataRaw);
   const carouselData = Object.values(carouselObjects[0]);
+  const caruoselSlideDuration = carouselDataRaw.slideDuration;
+
+  console.log("Duration: ", carouselDataRaw.slideDuration);
 
   const [imageIndex, setImageIndex] = useState(0);
 
@@ -27,9 +30,12 @@ export default function Featured(carouselDataRaw: carouselDataTypes) {
   };
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      showNextImage();
-    }, 7000);
+    const timer = setTimeout(
+      () => {
+        showNextImage();
+      },
+      caruoselSlideDuration ? caruoselSlideDuration : 7000
+    );
     return () => {
       clearTimeout(timer);
     };

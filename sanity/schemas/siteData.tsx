@@ -127,6 +127,28 @@ export const siteData = defineType({
       ],
     },
     {
+      name: "slideDuration",
+      title: "Carousel Slide Duration",
+      description:
+        "Use the the drop-down list to select how long you would like the carousel to display the slides before automatically advancing. If nothing selected the Slide Duration will be 7 seconds.",
+      type: "number",
+      options: {
+        list: [
+          { title: "5 sec.", value: 5000 },
+          { title: "6 sec.", value: 6000 },
+          { title: "7 sec.", value: 7000 },
+          { title: "8 sec.", value: 8000 },
+          { title: "9 sec.", value: 9000 },
+          { title: "10 sec.", value: 10000 },
+          { title: "11 sec.", value: 11000 },
+          { title: "12 sec.", value: 12000 },
+          { title: "13 sec.", value: 13000 },
+          { title: "14 sec.", value: 14000 },
+          { title: "15 sec.", value: 15000 },
+        ],
+      },
+    },
+    {
       name: "categories",
       title: "Categories",
       description:

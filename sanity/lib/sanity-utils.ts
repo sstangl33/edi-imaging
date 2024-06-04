@@ -27,7 +27,8 @@ export async function getCarouselData() {
       link[] -> {
         "currentSlug": slug.current,
       }
-    }
+    },
+    slideDuration,
   }`;
   const siteData = await client.fetch(query);
 

@@ -12,6 +12,7 @@ export type carouselDataTypes = {
   slideText: string;
   slideImage: any;
   slideImageUrl: string;
+  slideDuration: number;
   currentSlug: string;
   link: [];
 };
