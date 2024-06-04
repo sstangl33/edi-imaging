@@ -73,7 +73,7 @@ export const holidayBanner = defineType({
       title: "Christmas Banner End Month",
       type: "number",
       description:
-        "Select the month you would like to stop using the Christmas banner on the Home page. Christmas banner usage will stop at the end of the selected month.",
+        "Select the month you would like to stop using the Christmas banner on the Home page. Christmas banner usage will stop at the beginning of the selected month.",
       options: {
         list: [
           { title: "January", value: 1 },
@@ -101,7 +101,7 @@ export const holidayBanner = defineType({
       title: "Easter Banner End Month",
       type: "number",
       description:
-        "Select the month you would like to stop using the Easter banner on the Home page. Banner usage will stop at the end of the selected month.",
+        "Select the month you would like to stop using the Easter banner on the Home page. Banner usage will stop at the beginning of the selected month.",
       options: {
         list: [
           { title: "April", value: 4 },
