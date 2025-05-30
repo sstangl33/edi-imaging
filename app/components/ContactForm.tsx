@@ -28,9 +28,19 @@ export const ContactForm = () => {
       }`}</h2>
       <form
         className="contactForm"
-        action="https://formsubmit.co/info@ediimaging.com"
+        action="https://api.web3forms.com/submit"
         method="POST"
       >
+        {/* -- Replace with your Access Key -- */}
+        <input
+          type="hidden"
+          name="access_key"
+          value="a45ff776-6075-4515-a4b7-8548fff22378"
+        />
+
+        {/* <!-- Optional: Can be type="hidden" or type="text" for subject --> */}
+        <input type="hidden" name="subject" value={`${subject}`} />
+
         <input
           type="hidden"
           name="_subject"
@@ -43,7 +53,9 @@ export const ContactForm = () => {
           name="_next"
           value="https://ediimaging.com/thanks"
         />
-        <input type="text" name="_honey" className="hidden" />
+
+        {/* -- Honeypot Spam Protection -- */}
+        <input type="checkbox" name="botcheck" className="hidden" />
 
         <div className="colWrapper">
           <div className="w-50">
@@ -103,6 +115,13 @@ export const ContactForm = () => {
             </div>
           </div>
         </div>
+
+        {/* -- Custom Confirmation / Success Page -- */}
+        <input
+          type="hidden"
+          name="redirect"
+          value="https://www.ediimaging.com/thanks"
+        />
 
         <div className="btn-container">
           <button className="button" type="submit">
